@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
