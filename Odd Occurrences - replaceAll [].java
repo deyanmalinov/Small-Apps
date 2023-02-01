@@ -21,7 +21,7 @@ public class Main {
                     res.add(entry.getKey());
                 }
             }
-//            System.out.println(String.join(", ",res));
+           System.out.println(String.join(", ",res));
             System.out.println(res.toString().replaceAll("\\[|\\]", ""));
         }
 }
