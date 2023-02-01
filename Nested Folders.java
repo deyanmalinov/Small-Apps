@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 
 import java.io.File;
 import java.io.IOException;
