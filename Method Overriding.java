@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -18,8 +18,7 @@ public class Main {
             }
         }
     }
-}-------------------------------------
-package DPM;
+}
 public class Rectangle {
     protected double a;
     protected double b;
@@ -33,8 +32,7 @@ public class Rectangle {
     protected double area(){
         return this.a*this.b;
     }
-}-------------------------------------
-package DPM;
+}
 public class Square extends Rectangle{
     private double a;
     public Square(double a) {
