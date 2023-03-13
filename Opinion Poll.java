@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -21,8 +21,7 @@ public class Main {
                 .format("%s - %d",person.getName(),person.getAge())));
     }
 }
--------------------------------------------------------------------
-package DPM;
+
 public class Person {
     private String name;
     private int age;
