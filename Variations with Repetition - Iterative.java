@@ -1,4 +1,4 @@
-package com.company;
+package com.DPM;
 
 public class Main {
 
