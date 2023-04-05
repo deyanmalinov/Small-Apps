@@ -1,4 +1,4 @@
-package com.company;
+package com.DPM;
 
 import java.util.*;
 
@@ -14,12 +14,7 @@ public class Main {
                         char tchar = (char)('a' +k);
                         System.out.printf("%c%c%c%n", fchar, schar,tchar);
                     }
-
-                    
-
                 }
-
             }
         }
-
 }
