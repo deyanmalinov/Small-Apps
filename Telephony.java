@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
@@ -21,16 +21,16 @@ public class Main {
             }
         }
     }
-}------------------------------------
-package DPM;
+}
+
 public interface Browsable {
     String browse(String site);
-}----------------------------------
-package DPM;
+}
+
 public interface Callable {
     String call(String number);
-}--------------------------------
-package DPM;
+}
+
 public class Smartphone implements Browsable, Callable{
     public Smartphone(){
     }
