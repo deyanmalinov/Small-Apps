@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class Main {
                 .distinct()
                 .limit(2)
                 .forEach(x -> System.out.print(x + " "));
-------------------------------------------------------------
+
 Arrays.stream(scan.nextLine()
                 .split(" "))
                 .map(x->Integer.parseInt(x))
@@ -25,6 +25,6 @@ Arrays.stream(scan.nextLine()
                 .distinct()
                 .limit(2)
                 .forEach(x -> System.out.print(x + " "));
---------------------------------------------------------------
+
     }
 }
