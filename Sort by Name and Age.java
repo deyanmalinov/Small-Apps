@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -29,8 +29,7 @@ public class Main {
         }
     }
 }
------------------------------------------------------------------------------------
-package DPM;
+
 public class Person {
     private String fname;
     private String sname;
