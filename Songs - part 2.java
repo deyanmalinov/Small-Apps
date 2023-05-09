@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 
 public class Songs {
     private String typeList;
