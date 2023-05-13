@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -8,12 +8,10 @@ public class Main {
         circle.draw();
         rectangle.draw();
     }
-}-----------------------------
-package DPM;
+}
 public interface Drawable {
     void draw();
-}-----------------------------
-package DPM;
+}
 public class Circle implements Drawable{
     private Integer radius;
     public Circle(Integer radius){
@@ -35,8 +33,7 @@ public class Circle implements Drawable{
                     System.out.print(" "); }
             System.out.println(); }
     }
-}---------------------------------------
-package DPM;
+}
 public class Rectangle implements Drawable{
     private Integer width;
     private Integer height;
