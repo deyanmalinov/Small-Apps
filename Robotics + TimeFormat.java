@@ -32,6 +32,7 @@ public class Main {
             products.offer(end);
             end = scan.nextLine();
         }
+
         String [] timeData = startTime.split(":");
         int hours = Integer.parseInt(timeData[0]);
         int min = Integer.parseInt(timeData[1]);
