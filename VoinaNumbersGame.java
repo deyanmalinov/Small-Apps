@@ -31,9 +31,9 @@ public class VoinaNumbersGame {
             }
         }
         if (firstPlayer.size() > secondPlayer.size()){
-            System.out.println("First player win!");
+            System.out.println("First player wins!");
         }else if (secondPlayer.size() > firstPlayer.size()){
-            System.out.println("Second player win!");
+            System.out.println("Second player wins!");
         }else {
             System.out.println("Draw");
         }
@@ -41,7 +41,9 @@ public class VoinaNumbersGame {
 
     static LinkedHashSet<Integer> getCollect(String line) {
         LinkedHashSet<Integer> res = new LinkedHashSet<>();
-        Arrays.stream(line.split(" ")).mapToInt(Integer::parseInt).forEach(res::add);
+        Arrays.stream(line.split(" "))
+                .mapToInt(Integer::parseInt)
+                .forEach(res::add);
         return res;
     }
 }
