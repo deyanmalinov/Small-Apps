@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 public class Main {
@@ -14,13 +14,11 @@ public class Main {
     private static void print(Person person){
         System.out.println(person.sayHello());
     }
-}-------------------------------------
-package DPM;
+}
 public interface Person {
     String getName();
     String sayHello();
-}------------------------------------
-package DPM;
+}
 public abstract class BasePerson implements Person{
     private String name;
     private String hello;
@@ -35,8 +33,7 @@ public abstract class BasePerson implements Person{
     public String sayHello() {
         return hello;
     }
-}-----------------------------------
-package DPM;
+}
 public class Bulgarian extends BasePerson {
     private String name;
     public Bulgarian(String name){
@@ -54,8 +51,7 @@ public class Bulgarian extends BasePerson {
     public String sayHello() {
         return "Здравей";
     }
-}-------------------------------------
-package DPM;
+}
 public class European extends BasePerson{
     private String name;
     public European(String name){
@@ -73,8 +69,7 @@ public class European extends BasePerson{
     public String sayHello() {
         return "Hello";
     }
-}-------------------------------------
-package DPM;
+}
 public class Chinese extends BasePerson{
     private String name;
     public Chinese(String name){
