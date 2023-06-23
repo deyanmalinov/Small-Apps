@@ -9,7 +9,7 @@ public class WordFilter {
         String [] line = scan.nextLine().split(" ");
         Arrays.asList(line).stream().filter(w -> w.length() % 2 == 0)
                 .forEach(System.out::println);
-/////////////////////////////////////
+//
         Arrays.stream(scan.nextLine().split(" ")).
                 filter(w -> w.length() % 2 == 0).
                 forEach(e -> System.out.println(e));

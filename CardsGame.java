@@ -36,9 +36,6 @@ public class CardsGame {
                 fpD.remove(0);
                 spD.remove(0);
             }
-
-
-
         }
         int sum =0;
         if (fpD.size()>spD.size()){
