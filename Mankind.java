@@ -17,8 +17,8 @@ public class Main {
             System.out.println(msg.getMessage());
         }
     }
-}--------------------------------------
-package DPM;
+}
+
 public class Human {
     private String fname;
     private String sname;
@@ -58,8 +58,8 @@ public class Human {
                 .append("Last Name: ").append(this.sname);
         return human.toString();
     }
-}-------------------------------------
-package DPM;
+}
+
 public class Student extends Human{
     private String number;
     public Student(String fname, String sname, String number){
@@ -82,8 +82,8 @@ public class Student extends Human{
                 .append("Faculty number: ").append(this.number);
         return student.toString();
     }
-}----------------------------------
-package DPM;
+}
+
 public class Worker extends Human{
     private double salary;
     private double hours;
