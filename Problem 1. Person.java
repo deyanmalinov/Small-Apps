@@ -13,8 +13,7 @@ public class Main {
         }
     }
 }
------------------------------------
-package DPM;
+
 public class Person {
     private int age;
     private String name;
@@ -45,8 +44,7 @@ public class Person {
         return String.format("Name: %s, Age: %d", this.getName(), this.getAge());
     }
 }
-------------------------------------------------------
-package DPM;
+
 public class Child extends Person{
     public Child (String name, int age){
         super(name, age);
