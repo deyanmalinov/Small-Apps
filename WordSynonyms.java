@@ -1,7 +1,8 @@
-package DPM;
-import java.text.DecimalFormat;
+package com.DPM;
+
 import java.util.*;
-public class Main {
+
+public class WordSynonyms {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
