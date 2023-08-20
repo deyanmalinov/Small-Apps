@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -34,7 +34,7 @@ public class Main {
     }
 }
 ---------------------------------------------------------------------
-package DPM;
+package com.DPM;
 public class Employee {
     private final static String NO_EMAIL = "n/a";
     private final static int NO_AGE = -1;
