@@ -41,8 +41,7 @@ public class Main {
         });
     }
 }
------------------------------------------------------------------------------------
-package com.DPM;
+
 public class Employee {
     private String name;
     private double salary;
@@ -75,10 +74,8 @@ public class Employee {
         return this.age;
     }
 }
-----------------------------------------------------------------------
-package com.DPM;
-import java.util.ArrayList;
-import java.util.List;
+
+
 public class Department {
     private List<Employee> employees;
     public Department(){
