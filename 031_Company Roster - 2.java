@@ -33,8 +33,7 @@ public class Main {
 //        TODO Printing
     }
 }
----------------------------------------------------------------------
-package com.DPM;
+
 public class Employee {
     private final static String NO_EMAIL = "n/a";
     private final static int NO_AGE = -1;
