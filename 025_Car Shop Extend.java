@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -8,8 +8,8 @@ public class Main {
         System.out.println(seat.toString());
         System.out.println(audi.toString());
     }
-}------------------------------------------
-package DPM;
+}
+
 public interface Car {
     int TIRES = 4;
     String getModel();
