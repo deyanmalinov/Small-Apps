@@ -15,17 +15,17 @@ public interface Car {
     String getModel();
     String getColor();
     Integer getHorsePower();
-}------------------------------------------
-package DPM;
+}
+
 public interface Sellable extends Car{
     Double getPrice();
-}------------------------------------------
-package DPM;
+}
+
 public interface Rentable extends Car{
     Integer getMinRentDay();
     Double getPricePerDay();
-}------------------------------------------
-package DPM;
+}
+
 public class Seat implements Sellable {
     private String countryProduced;
     private String model;
@@ -60,8 +60,8 @@ public class Seat implements Sellable {
         return String.format("%s is %s and have %d horse powers\nThis is %s produced in %s and have %d tires",
                 this.getModel(), this.getColor(), this.getHorsePower(), this.getModel(), this.countryProduced, TIRES);
     }
-}-------------------------------------------------------------
-package DPM;
+}
+
 public class Audi implements Rentable {
     private String countryProduced;
     private String model;
