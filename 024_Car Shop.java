@@ -1,4 +1,6 @@
-package DPM;
+package com.DPM;
+
+import java.io.Serializable;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -6,14 +8,14 @@ public class Main {
         Car seat = new Seat("Leon", "gray", 110, "Spain");
         System.out.println(seat.toString());
     }
-}----------------------------------------
+}
 package DPM;
 public interface Car {
     int TIRES = 4;
     String getModel();
     String getColor();
     Integer getHorsePower();
-}--------------------------------------
+}
 package DPM;
 import java.io.Serializable;
 public class Seat implements Car, Serializable {
