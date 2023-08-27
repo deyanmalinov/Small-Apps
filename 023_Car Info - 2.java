@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 public class Main {
@@ -19,8 +19,7 @@ public class Main {
                 .forEach(car -> System.out.println(car.getCarInfo()));
     }
 }
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
+
 package DPM;
 public class Car {
         private String make;
