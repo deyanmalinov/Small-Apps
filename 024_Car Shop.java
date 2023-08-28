@@ -9,14 +9,14 @@ public class Main {
         System.out.println(seat.toString());
     }
 }
-package DPM;
+
 public interface Car {
     int TIRES = 4;
     String getModel();
     String getColor();
     Integer getHorsePower();
 }
-package DPM;
+
 import java.io.Serializable;
 public class Seat implements Car, Serializable {
     private String countryProduced;
