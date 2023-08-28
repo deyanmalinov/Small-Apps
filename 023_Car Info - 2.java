@@ -20,7 +20,6 @@ public class Main {
     }
 }
 
-package DPM;
 public class Car {
         private String make;
         public String getMake() {
