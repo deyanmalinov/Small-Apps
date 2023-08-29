@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -18,10 +18,7 @@ public class Main {
         }
     }
 }
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-package DPM;
+
 public class Car {
         private String make;
     public String getMake() {
