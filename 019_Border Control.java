@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -25,12 +25,12 @@ public class Main {
                 .endsWith(fakeID))
                 .forEach(identifable -> System.out.println(identifable.getId()));
        }
-}-----------------------------------------------
-package DPM;
+}
+
 public interface Identifable {
     String getId();
-}-----------------------------------------------
-package DPM;
+}
+
 public class Citizen implements Identifable {
     private String name;
     private int age;
@@ -44,8 +44,8 @@ public class Citizen implements Identifable {
     public String getId() {
         return this.id;
     }
-}---------------------------------------
-package DPM;
+}
+
 public class Robot implements Identifable {
     private String model;
     private String  id;
@@ -57,4 +57,4 @@ public class Robot implements Identifable {
     public String getId() {
         return this.id;
     }
-}----------------------------------------
+}
