@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -54,8 +54,8 @@ public class Main {
         }
     }
 }
------------------------------------------------------------------
-package DPM;
+
+
 public class BankAccount {
     public int getId() {
         return id;
