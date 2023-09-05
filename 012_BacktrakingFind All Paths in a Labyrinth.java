@@ -1,3 +1,9 @@
+package com.DPM;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
     static List<Character> path = new ArrayList<>();
     public static void main(String[] args) {
