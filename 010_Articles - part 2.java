@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 
 public class Article {
     private String title;
