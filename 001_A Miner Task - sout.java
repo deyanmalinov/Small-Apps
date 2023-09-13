@@ -20,14 +20,6 @@ public class Main {
                 goods.put(metal, amaunt);
             }
         }
-//        for (Map.Entry<String, Integer> entry : goods.entrySet()) {
-//            System.out.printf("%s -> %d%n", entry.getKey(), entry.getValue());
-//        }
-        /////////////////////////////////////////
-//        goods.entrySet().forEach(el -> {
-//            System.out.printf("%s -> %d\n", el.getKey(), el.getValue());
-//        });
-        /////////////////////////////////////////
         goods.forEach((key, value ) -> System.out.printf("%s -> %d\n", key, value));
     }
 }
