@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -15,13 +15,13 @@ public class Main {
         names.stream()
                 .map(name -> name.toUpperCase())
                 .forEach(name -> System.out.print(name + " "));
-//////////////////////////////////////////////////////////////
+
 Arrays.stream(scan.nextLine()
                 .split(" "))
                 .collect(Collectors.toList()).stream()
                 .map(name -> name.toUpperCase())
                 .forEach(name -> System.out.print(name + " "));
-/////////////////////////////////////////////////////////////
+
 
     }
 }
