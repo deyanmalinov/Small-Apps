@@ -1,3 +1,4 @@
+package com.DPM;
 import java.util.Scanner;
 
 public class Main {
