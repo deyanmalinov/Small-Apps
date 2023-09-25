@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 import java.text.DecimalFormat;
 import java.util.*;
 public class Main {
