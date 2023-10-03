@@ -1,4 +1,4 @@
-package DPM;
+package com.DPM;
 
 import java.util.Arrays;
 import java.util.Scanner;
