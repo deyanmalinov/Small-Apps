@@ -1,4 +1,4 @@
-package com.company;
+package com.DPM;
 public class Main {
     public static void main(String[] args) {
         BankAccount acc = new BankAccount();
