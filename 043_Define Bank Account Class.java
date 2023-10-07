@@ -9,8 +9,7 @@ public class Main {
                 ,acc.getId(),acc.getBalance());
 	}
 }
---------------------------------------
-package com.company;
+
 public class BankAccount {
     public int getId() {
         return id;
