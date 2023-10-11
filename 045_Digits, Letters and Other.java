@@ -23,9 +23,12 @@ public class Main {
                nish.add(line.group("nish"));
 
             }
-            System.out.println(cif.toString().replaceAll(", ", "").replaceAll("\\[|\\]", ""));
-            System.out.println(buk.toString().replaceAll(", ", "").replaceAll("\\[|\\]", ""));
-            System.out.println(nish.toString().replaceAll(", ", "").replaceAll("\\[|\\]", "").replaceAll("null", ""));
+            System.out.println(cif.toString().replaceAll(", ", "")
+                    .replaceAll("\\[|\\]", ""));
+            System.out.println(buk.toString().replaceAll(", ", "")
+                    .replaceAll("\\[|\\]", ""));
+            System.out.println(nish.toString().replaceAll(", ", "")
+                    .replaceAll("\\[|\\]", "").replaceAll("null", ""));
 
         }
 }
