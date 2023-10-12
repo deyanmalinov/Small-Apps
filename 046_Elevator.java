@@ -10,7 +10,7 @@ public class Main {
 
             int cours = numPeople / capasiti;
             int cous = numPeople % capasiti;
-            if (cous!=0){
+            if (cous != 0){
                 cours++;
             }
             System.out.println(cours);
