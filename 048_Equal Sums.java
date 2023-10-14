@@ -26,7 +26,7 @@ public class Main {
                 }
             }
             if (ind != true){
-                System.out.println("no");
+                System.out.println("No");
             }
         }
 
