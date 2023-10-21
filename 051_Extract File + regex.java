@@ -3,6 +3,8 @@ package com.DPM;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
         public static void main(String[] args) {
@@ -15,17 +17,17 @@ public class Main {
 
             System.out.println("File name: " + nFile);
             System.out.println("File extension: " + ext);
-////////////////////////////////////////
-//            String regex = "(.*)\\.(.*)";
-//
-//
-//            Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
-//            Matcher matcher = pattern.matcher(file);
-//
-//            if (matcher.find()) {
-//                System.out.println("File name: " + matcher.group(1));
-//                System.out.println("File extension: " + matcher.group(2));
-//            }
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+            String regex = "(.*)\\.(.*)";
+
+
+            Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+            Matcher matcher = pattern.matcher(file);
+
+            if (matcher.find()) {
+                System.out.println("File name: " + matcher.group(1));
+                System.out.println("File extension: " + matcher.group(2));
+            }
+
         }
 }
