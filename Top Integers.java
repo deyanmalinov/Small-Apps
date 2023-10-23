@@ -8,21 +8,21 @@ public class Main {
             String [] line = scan.nextLine().split(" ");
             int [] nums = new int[line.length];
 
-            boolean isBig = false;
+            boolean isTop = false;
             for (int i = 0; i < line.length; i++) {
                 nums[i]=Integer.parseInt(line[i]);
             }
             for (int i = 0; i < nums.length; i++) {
                 for (int j = i; j < nums.length; j++) {
                     if (nums[i] < nums[j]){
-                        isBig = false;
+                        isTop = false;
                         break;
                     }else {
-                        isBig = true;
+                        isTop = true;
                     }
 
                 }
-                if (isBig == true){
+                if (isTop == true){
                     System.out.print(nums[i]+" ");
                 }
             }
