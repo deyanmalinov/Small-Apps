@@ -3,6 +3,7 @@ package com.DPM;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -18,7 +19,7 @@ public class Main {
         int fill= 1;
 
         for (int i = 0; i < size; i++) {
-            if (i%2==0){
+            if (i % 2 == 0){
                 for (int j = 0; j < size; j++) {
                     matrix[j][i] = fill++;
                 }
