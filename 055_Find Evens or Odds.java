@@ -1,3 +1,4 @@
+package com.DPM;
 import java.util.Scanner;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
