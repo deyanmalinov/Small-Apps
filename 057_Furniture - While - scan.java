@@ -6,11 +6,15 @@ import java.util.regex.Pattern;
 
 public class Main {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
-           String regex = "\\>\\>(?<one>[A-Za-z]+)\\<\\<(?<two>[\\d\\.]+)!(?<three>[\\d]+)";
+
+            String regex = "\\>\\>(?<one>[A-Za-z]+)\\<\\<(?<two>[\\d\\.]+)!(?<three>[\\d]+)";
+
             List<String> mebel = new ArrayList<>();
 
             String string = scan.nextLine();
+
             double sum =0;
 
             while (!"Purchase".equals(string)){
@@ -27,6 +31,7 @@ public class Main {
             }
                 string = scan.nextLine();
            }
+
             System.out.println("Bought furniture:");
             for (String s : mebel) {
                 System.out.println(s);
