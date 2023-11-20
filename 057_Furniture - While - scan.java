@@ -25,7 +25,6 @@ public class Main {
                 mebel.add(matcher.group("one"));
                 double cena = Double.parseDouble(matcher.group("two"));
                 int broi = Integer.parseInt(matcher.group("three"));
-
                 sum += cena*broi;
 
             }
@@ -33,6 +32,7 @@ public class Main {
            }
 
             System.out.println("Bought furniture:");
+
             for (String s : mebel) {
                 System.out.println(s);
             }
