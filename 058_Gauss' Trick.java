@@ -18,7 +18,7 @@ public class Main {
             for (Integer num : liAr) {
                 System.out.print(num + " ");
 		}
-//			System.out.println(liAr.toString().replaceAll("[\\[\\],]", ""));
+			System.out.println(liAr.toString().replaceAll("[\\[\\],]", ""));
 
         }
 }
