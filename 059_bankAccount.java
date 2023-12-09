@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class bankAccount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-//        String line = scanner.nextLine();
-//        int number = Integer.parseInt(line);
+       String line = scanner.nextLine();
+       int number = Integer.parseInt(line);
         int balance = 0;
 
         System.out.println("Enter amounts (type 'end' to finish input):");
