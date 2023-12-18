@@ -4,10 +4,15 @@ import java.util.*;
 
 public class Main {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
+
             String nums = scan.nextLine();
+
             String [] mas = nums.split(" ");
+
             int [] chisla = new int [mas.length];
+
             int sum =0;
 
             for (int i = 0; i < chisla.length; i++) {
