@@ -5,9 +5,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         LinkedHashMap<String, Integer> resurs = new LinkedHashMap<>();
+
         String line = scan.nextLine();
+
         while (!line.equals("stop")){
             String fline = line;
             String sLine = scan.nextLine();
@@ -18,6 +22,7 @@ public class Main {
             }
             line=scan.nextLine();
         }
+
         for (Map.Entry<String, Integer> entry : resurs.entrySet()) {
             System.out.println(entry.getKey() + " -> " +entry.getValue());
         }
