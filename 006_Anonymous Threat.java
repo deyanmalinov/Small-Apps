@@ -3,12 +3,17 @@ import java.util.*;
 import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String [] line = scan.nextLine().split(" ");
+
         List<String> strList = new ArrayList<>();
+
         for (int i = 0; i < line.length; i++) {
             strList.add(i, line[i]);
         }
+
         String data = scan.nextLine();
 
         while (!data.equals("3:1")){
@@ -37,10 +42,12 @@ public class Main {
             System.out.print(s + " ");
         }
     }
-
     private static List<String> delene(String ele, int part) {
-         int part1 = ele.length() / part;
+
+        int part1 = ele.length() / part;
+
         ArrayList<String> res = new ArrayList<>();
+
         while (ele.length() >= part1){
             res.add(ele.substring(0, part1));
             ele = ele.substring(part1);
@@ -53,12 +60,9 @@ public class Main {
             res.add(concLTele);
             return res;
         }
-
-
-        }
-
-
+    }
     private static int validIndex (int index, int lenght){
+
         if (index<0){
             index=0;
         }
