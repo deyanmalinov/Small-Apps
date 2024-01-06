@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
             String one = scan.nextLine();
             String two = scan.nextLine();
