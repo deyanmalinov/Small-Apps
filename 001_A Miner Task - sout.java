@@ -18,13 +18,9 @@ public class Main {
             String metal = line;
 
             int amaunt = Integer.parseInt(scan.nextLine());
-
             if (goods.containsKey(line)){
-
                 goods.put(metal, goods.get(metal)+amaunt);
-
             }else {
-
                 goods.put(metal, amaunt);
             }
         }
