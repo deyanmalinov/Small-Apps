@@ -1,3 +1,4 @@
+package com.DPM;
 public class arraysPrint {
     public static void main(String[] args) {
         int[] array = arrayOfMultiples(2, 3);

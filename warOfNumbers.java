@@ -1,3 +1,4 @@
+package com.DPM;
 public class warOfNumbers {
     public static void main(String... args) {
         int result = 0;
