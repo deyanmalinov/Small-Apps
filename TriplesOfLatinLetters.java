@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.*;
 
-public class Main {
+public class TriplesOfLatinLetters {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             int n = Integer.parseInt(scan.nextLine());
