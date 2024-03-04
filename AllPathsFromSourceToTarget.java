@@ -31,7 +31,10 @@ public class AllPathsFromSourceToTarget {
         return nm;
     }
 
-    private void storeAllPathsUtil(int u, int d, boolean[] isVisited, List<Integer> localPathList) {
+    private void storeAllPathsUtil(int u,
+                                   int d,
+                                   boolean[] isVisited,
+                                   List<Integer> localPathList) {
         if (u == d) {
             nm.add(new ArrayList<>(localPathList));
             return;
@@ -47,7 +50,10 @@ public class AllPathsFromSourceToTarget {
         isVisited[u] = false;
     }
 
-    public static List<List<Integer>> allPathsFromSourceToTarget(int vertices, int[][] edges, int source, int destination) {
+    public static List<List<Integer>> allPathsFromSourceToTarget(int vertices,
+                                                                 int[][] edges,
+                                                                 int source,
+                                                                 int destination) {
         AllPathsFromSourceToTarget graph = new AllPathsFromSourceToTarget(vertices);
         for (int[] edge : edges) {
             graph.addEdge(edge[0], edge[1]);
