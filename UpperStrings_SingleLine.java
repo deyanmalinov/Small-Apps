@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Main {
+public class UpperStrings_SingleLine {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
