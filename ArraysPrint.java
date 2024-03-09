@@ -1,8 +1,9 @@
 package com.DPM;
-public class arraysPrint {
+public class ArraysPrint {
     public static void main(String[] args) {
 
         int[] array = arrayOfMultiples(2, 3);
+
         for (int i : array) {
             System.out.print(i);
         }
