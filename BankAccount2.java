@@ -1,12 +1,15 @@
 package com.DPM;
 import java.util.Scanner;
-
 public class BankAccount2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
+       Scanner scanner = new Scanner(System.in);
+
        String line = scanner.nextLine();
+
        int number = Integer.parseInt(line);
-        int balance = 0;
+
+       int balance = 0;
 
         System.out.println("Enter amounts (type 'end' to finish input):");
 
