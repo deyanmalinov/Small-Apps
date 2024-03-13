@@ -1,12 +1,14 @@
 package com.DPM;
-
 import java.util.*;
-
 public class MaxSequenceOfEqualElements {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
+
             String [] line = scan.nextLine().split(" ");
+
             int [] nums = new int[line.length];
+
             for (int i = 0; i < nums.length; i++) {
                 nums[i] = Integer.parseInt(line[i]);
             }
@@ -24,10 +26,8 @@ public class MaxSequenceOfEqualElements {
                     bInd = nums[i+1];
                 }
             }
-           
             for (int i = 0; i < mLen; i++) {
                 System.out.print(bInd + " ");
             }
         }
-
 }
