@@ -5,20 +5,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class ValidationData {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int lines = Integer.parseInt(scan.nextLine());
-        List<Person> people = new ArrayList<>();
+        List<Person2> people = new ArrayList<>();
         for (int i = 0; i < lines; i++) {
-            Person man = null;
+            Person2 man = null;
             String[] line = scan.nextLine().split(" ");
             String fname = line[0];
             String sname = line[1];
             int age = Integer.parseInt(line[2]);
             double salary = Double.parseDouble(line[3]);
             try{
-                man = new Person(fname, sname, age, salary);
+                man = new Person2(fname, sname, age, salary);
             }catch (IllegalArgumentException exception){
                 System.out.println(exception.getMessage());
             }
@@ -27,22 +27,22 @@ public class Main {
             }
         }
         double bonus = Double.parseDouble(scan.nextLine());
-        for (Person person : people) {
+        for (Person2 person : people) {
             person.increaseSalary(bonus);
         }
-        for (Person person : people) {
+        for (Person2 person : people) {
             System.out.println(person.toString());
         }
     }
 }
 
 
-public class Person {
+class Person2 {
     private String fname;
     private String sname;
     private int age;
     private double salary;
-    public Person(String fname, String sname, int age, double salary){
+    public Person2(String fname, String sname, int age, double salary){
         this.setFname(fname);
         this.setSname(sname);
         this.setAge(age);
