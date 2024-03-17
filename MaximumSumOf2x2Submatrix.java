@@ -2,11 +2,17 @@ package com.DPM;
 import java.util.Scanner;
 public class MaximumSumOf2x2Submatrix {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String[] matrSize = scan.nextLine().split(", ");
+
         int rows = Integer.parseInt(matrSize[0]);
+
         int cols = Integer.parseInt(matrSize[1]);
+
         int[][] matrix = new int[rows][cols];
+
         for (int row = 0; row < matrix.length; row++) {
             String[] line= scan.nextLine().split(", ");
             for (int col = 0; col < matrix[0].length; col++) {
