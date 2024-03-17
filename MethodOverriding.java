@@ -2,8 +2,11 @@ package com.DPM;
 import java.util.Scanner;
 public class MethodOverriding {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int lines = Integer.parseInt(scan.nextLine());
+
         for (int i = 0; i < lines; i++) {
             String[] line = scan.nextLine().split(" ");
             if (line.length > 1){
@@ -20,6 +23,7 @@ public class MethodOverriding {
     }
 }
 class Rectangle {
+
     protected double a;
     protected double b;
     protected Rectangle(double a){
@@ -34,6 +38,7 @@ class Rectangle {
     }
 }
 class Square extends Rectangle{
+
     private double a;
     public Square(double a) {
         super(a);
