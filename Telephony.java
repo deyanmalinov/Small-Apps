@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class Telephony {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         String[] phones = scan.nextLine().split(" ");
@@ -23,15 +23,15 @@ public class Main {
     }
 }
 
-public interface Browsable {
+interface Browsable {
     String browse(String site);
 }
 
-public interface Callable {
+interface Callable {
     String call(String number);
 }
 
-public class Smartphone implements Browsable, Callable{
+class Smartphone implements Browsable, Callable{
     public Smartphone(){
     }
     @Override
