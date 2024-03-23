@@ -1,13 +1,13 @@
 package com.DPM;
-
 public class MergeSort {
     public static void main(String[] args){
+
         int[] nums = new int[]{5,6,2,8,1,9,3,4};
+
         Sort(nums, 0, nums.length - 1);
+
         Print(nums);
-
     }
-
     private static void Sort(int[] nums, int startInd, int endInd) {
         //Arrays.sort(nums);
         if (startInd >= endInd){
@@ -21,7 +21,6 @@ public class MergeSort {
 
             Merge(nums, startInd, midInd, endInd);
     }
-
     private static void Merge(int[] nums, int startInd, int midInd, int endInd) {
         if (midInd < 0 || midInd + 1 >= nums.length || nums[midInd] <= nums[midInd + 1]) {
             return;
