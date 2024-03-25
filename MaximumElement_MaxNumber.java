@@ -1,14 +1,18 @@
 package com.DPM;
-
 import java.util.*;
-
 public class MaximumElement_MaxNumber {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         int comandCount = Integer.parseInt(scan.nextLine());
+
         Deque<Integer> stack = new ArrayDeque<>();
+
         Deque<Integer> maxStack = new ArrayDeque<>();
+
         int maxValue = Integer.MIN_VALUE;
+
         for (int i = 0; i < comandCount; i++) {
             String[] comands = scan.nextLine().split(" ");
             int com = Integer.parseInt(comands[0]);
@@ -37,6 +41,5 @@ public class MaximumElement_MaxNumber {
                     break;
             }
         }
-
     }
 }
