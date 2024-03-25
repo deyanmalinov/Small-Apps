@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.Scanner;
 
-public class Main {
+public class TextFilter {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             String [] banWords = scan.nextLine().split(", ");
