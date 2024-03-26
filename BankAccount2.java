@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.Scanner;
 
-public class bankAccount {
+public class BankAccount2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
        String line = scanner.nextLine();
