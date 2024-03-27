@@ -1,5 +1,5 @@
 package com.DPM;
-public class Main {
+public class VariationsTest {
 
     public static void main(String[] args) {
         int[] arr = new int[3];
