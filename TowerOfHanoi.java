@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.ArrayDeque;
-public class Main {
+public class TowerOfHanoi {
     public static void main(String[] args){
         ArrayDeque<Integer> first = new ArrayDeque<>();
         first.push(3);
