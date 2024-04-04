@@ -7,9 +7,7 @@ public class AMinerTask2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
         LinkedHashMap<String, Integer> resurs = new LinkedHashMap<>();
-
         String line = scan.nextLine();
 
         while (!line.equals("stop")){
