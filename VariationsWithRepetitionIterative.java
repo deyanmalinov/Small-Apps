@@ -1,6 +1,6 @@
 package com.DPM;
 
-public class Main {
+public class VariationsWithRepetitionIterative {
 
     public static void main(String[] args) {
         int arrSize = 3;
