@@ -4,10 +4,15 @@ import java.util.List;
 import java.util.Scanner;
 public class SortByNameAndAge {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int lines = Integer.parseInt(scan.nextLine());
+
         List<Persons> people = new ArrayList<>();
+
         Persons man = null;
+
         for (int i = 0; i < lines; i++) {
             String[] line = scan.nextLine().split(" ");
             String fname = line[0];
@@ -29,7 +34,6 @@ public class SortByNameAndAge {
         }
     }
 }
-
 class Persons {
     private String fname;
     private String sname;
