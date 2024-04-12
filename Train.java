@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.*;
 import java.util.stream.Collectors;
-public class Main {
+public class Train {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
