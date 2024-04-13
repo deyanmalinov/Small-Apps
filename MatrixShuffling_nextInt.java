@@ -2,14 +2,21 @@ package com.DPM;
 import java.util.Scanner;
 public class MatrixShuffling_nextInt {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
 //        String[] line = scan.nextLine().split(" ");
 //        int rows = Integer.parseInt(line[0]);
 //        int cols = Integer.parseInt(line[1]);
+
         int rows = scan.nextInt();
+
         int cols = scan.nextInt();
+
         scan.nextLine();
+
         String[][] matrix = new String[rows][cols];
+
         for (int r = 0; r < rows; r++) {
             matrix[r] = scan.nextLine().split(" ");
         }
