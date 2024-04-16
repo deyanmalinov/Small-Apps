@@ -2,11 +2,15 @@ package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-public class Main {
+public class OpinionPoll {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int lines = Integer.parseInt(scan.nextLine());
+
         List<Personi> people = new ArrayList<>();
+
         for (int i = 0; i <lines; i++) {
             String[] line = scan.nextLine().split(" ");
             String name = line[0];
@@ -21,8 +25,7 @@ public class Main {
                 .format("%s - %d",person.getName(),person.getAge())));
     }
 }
-
-public class Person {
+class Person {
     private String name;
     private int age;
     public Person(String name, int age){
