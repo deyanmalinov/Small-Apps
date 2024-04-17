@@ -4,6 +4,7 @@ import java.util.*;
 
 public class VoinaNumbersGame {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         Set<Integer> firstPlayer = getCollect(scan.nextLine());
         Set<Integer> secondPlayer = getCollect(scan.nextLine());
