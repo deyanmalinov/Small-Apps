@@ -3,13 +3,18 @@ import java.util.*;
 import java.util.stream.Collectors;
 public class ListOperations {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
-            List <String> strList = Arrays.stream(scan.nextLine().split("\\s+")).collect(Collectors.toList());
+
+            List <String> strList = Arrays.stream(scan.nextLine()
+                    .split("\\s+"))
+                    .collect(Collectors.toList());
+
             String line = scan.nextLine();
 
             while (!line.equals("End")){
 
-                String [] comand = line.split("\\s+");
+            String [] comand = line.split("\\s+");
                 switch (comand[0]){
                     case "Add":
                         strList.add(comand[1]);
@@ -34,14 +39,12 @@ public class ListOperations {
                                 strList.add(strList.get(0));
                                 strList.remove(0);
                             }
-
                         }else {
                             for (int i = 0; i < Integer.parseInt(comand[2]); i++) {
                                 strList.add(0, strList.get(strList.size()-1));
                                 strList.remove(strList.size()-1);
                             }
                         }
-
                         break;
 
                 }
@@ -50,6 +53,5 @@ public class ListOperations {
             for (String s : strList) {
                 System.out.print(s+" ");
             }
-
         }
 }
