@@ -6,9 +6,13 @@ import java.util.Scanner;
 
 public class CardsGame {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String [] line = scan.nextLine().split(" ");
+
         List<Integer> fpD = new ArrayList<>();
+
         for (int i = 0; i < line.length; i++) {
             fpD.add(i, Integer.parseInt(line[i]));
         }
