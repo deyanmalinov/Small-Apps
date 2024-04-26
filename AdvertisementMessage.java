@@ -1,5 +1,4 @@
 package com.DPM;
-
 import java.util.*;
 public class AdvertisementMessage {
         public static void main(String[] args) {
