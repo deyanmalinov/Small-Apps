@@ -1,38 +1,38 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class CarShopExtend {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Sellable seat = new Seat("Leon", "gray", 110, "Spain", 11111.1);
+        Sellable seat = new Seat2("Leon", "gray", 110, "Spain", 11111.1);
         Rentable audi = new Audi("Leon", "gray", 110, "Spain", 3, 99.9);
         System.out.println(seat.toString());
         System.out.println(audi.toString());
     }
 }
 
-public interface Car {
+interface Cars2 {
     int TIRES = 4;
     String getModel();
     String getColor();
     Integer getHorsePower();
 }
 
-public interface Sellable extends Car{
+interface Sellable extends Koli {
     Double getPrice();
 }
 
-public interface Rentable extends Car{
+interface Rentable extends Koli {
     Integer getMinRentDay();
     Double getPricePerDay();
 }
 
-public class Seat implements Sellable {
+class Seat2 implements Sellable {
     private String countryProduced;
     private String model;
     private String color;
     private Integer horsePower;
     private Double price;
-    public Seat(String model, String color, Integer horsePower,String countryProduced, Double price){
+    public Seat2(String model, String color, Integer horsePower,String countryProduced, Double price){
         this.countryProduced=countryProduced;
         this.model=model;
         this.color=color;
@@ -62,7 +62,7 @@ public class Seat implements Sellable {
     }
 }
 
-public class Audi implements Rentable {
+class Audi implements Rentable {
     private String countryProduced;
     private String model;
     private String color;

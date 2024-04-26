@@ -2,23 +2,23 @@ package com.DPM;
 
 import java.io.Serializable;
 import java.util.Scanner;
-public class Main {
+public class CarShop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Car seat = new Seat("Leon", "gray", 110, "Spain");
+        Koli seat = new Seat("Leon", "gray", 110, "Spain");
         System.out.println(seat.toString());
     }
 }
 
-public interface Car {
+interface Koli {
     int TIRES = 4;
     String getModel();
     String getColor();
     Integer getHorsePower();
 }
 
-import java.io.Serializable;
-public class Seat implements Car, Serializable {
+
+class Seat implements Koli, Serializable {
     private String countryProduced;
     private String model;
     private String color;
