@@ -12,7 +12,6 @@ public class ALL_CAPITALS {
                 "04. Java-Advanced-Files-and-Streams-Exercises-Resources\\output.txt";
 
         BufferedReader reader = new BufferedReader(new FileReader(path));
-
         PrintWriter writer = new PrintWriter(new FileWriter(output));
 
         try {
