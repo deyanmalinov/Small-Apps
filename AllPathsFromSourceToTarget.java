@@ -1,7 +1,6 @@
 package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
-
 public class AllPathsFromSourceToTarget {
     private final int vertices;
     private List<List<Integer>> nm = new ArrayList<>();
