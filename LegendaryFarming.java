@@ -1,23 +1,27 @@
 package com.DPM;
-
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
-
 public class LegendaryFarming {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         Map<String, Integer> keyMaterial = new LinkedHashMap<>();
 
         keyMaterial.put("shards", 0);
+
         keyMaterial.put("fragments", 0);
+
         keyMaterial.put("motes", 0);
 
         Map<String, Integer> junk = new LinkedHashMap<>();
+
         String winer = "";
 
         boolean flag = false;
+
         do {
             String[] data = scan.nextLine().split(" ");
             for (int i = 0; i < data.length; i += 2) {
