@@ -4,13 +4,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 public class Mankind {
     public static void main(String[] args) throws IOException {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         String[] lineStudent = reader.readLine().split("\\s+");
+
         String[] lineWorker = reader.readLine().split("\\s+");
+
         try {
             Student student = new Student(lineStudent[0], lineStudent[1], lineStudent[2]);
             Worker worker = new Worker(lineWorker[0], lineWorker[1],
-                    Double.parseDouble(lineWorker[2]), Double.parseDouble(lineWorker[3]));
+            Double.parseDouble(lineWorker[2]), Double.parseDouble(lineWorker[3]));
             System.out.println(student);
             System.out.println(worker);
         }catch (IllegalArgumentException msg) {
