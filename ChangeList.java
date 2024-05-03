@@ -1,8 +1,9 @@
 package com.DPM;
 import java.util.*;
 import java.util.stream.Collectors;
-public class Main {
+public class ChangeList {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
 
             List <String> strList = Arrays.stream(scan.nextLine().split(" ")).collect(Collectors.toList());
