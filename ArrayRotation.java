@@ -2,10 +2,12 @@ package com.DPM;
 import java.util.*;
 public class ArrayRotation {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String [] nums = scan.nextLine().split(" ");
         int rot = Integer.parseInt(scan.nextLine());
         rot= rot % nums.length;
+
         for (int i = 0; i < rot; i++) {
             String ele = nums[0];
             for (int j = 0; j < nums.length-1; j++) {
