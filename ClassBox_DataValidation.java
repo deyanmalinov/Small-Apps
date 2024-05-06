@@ -1,7 +1,8 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class ClassBox_DataValidation {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         double length = Double.parseDouble(scan.nextLine());
         double width = Double.parseDouble(scan.nextLine());
@@ -17,7 +18,7 @@ public class Main {
     }
 }
 
-public class Box {
+class Box {
     private double length;
     private double width;
     private double height;
