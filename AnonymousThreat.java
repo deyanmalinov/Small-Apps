@@ -1,6 +1,5 @@
 package com.DPM;
 import java.util.*;
-
 public class AnonymousThreat {
     public static void main(String[] args) {
 
@@ -19,19 +18,24 @@ public class AnonymousThreat {
         while (!data.equals("3:1")){
             String[] comand = data.split(" ");
             if (comand[0].equals("merge")){
+
                 int start = Integer.parseInt(comand[1]);
                 int end = Integer.parseInt(comand[2]);
                 start = validIndex(start, strList.size());
                 end = validIndex(end, strList.size());
+
                 String newElements = String.join("", strList.subList(start, end+1));
                 strList.subList(start, end+1).clear();
 
                     strList.add(start, newElements);
 
             }else if (comand[0].equals("divide")){
+
                 int index = Integer.parseInt(comand[1]);
                 int part = Integer.parseInt(comand[2]);
+
                 List<String> res = delene(strList.get(index), part);
+
                 strList.remove(index);
                 strList.addAll(index, res);
             }
