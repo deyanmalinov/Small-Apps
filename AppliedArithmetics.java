@@ -1,10 +1,8 @@
 package com.DPM;
-
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Consumer;
 import java.util.function.Function;
-
 public class AppliedArithmetics {
     public static void main(String[] args) {
 
@@ -15,13 +13,17 @@ public class AppliedArithmetics {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-        Function<int[], int[]> add = arr -> Arrays.stream(arr).map(el -> ++el).toArray();
+        Function<int[], int[]> add = arr -> Arrays.stream(arr)
+                .map(el -> ++el).toArray();
 
-        Function<int[], int[]> sub = arr -> Arrays.stream(arr).map(el -> --el).toArray();
+        Function<int[], int[]> sub = arr -> Arrays.stream(arr)
+                .map(el -> --el).toArray();
 
-        Function<int[], int[]> mult = arr -> Arrays.stream(arr).map(el -> el *= 2).toArray();
+        Function<int[], int[]> mult = arr -> Arrays.stream(arr)
+                .map(el -> el *= 2).toArray();
 
-        Consumer<int[]> print = arr -> Arrays.stream(arr).forEach(el -> System.out.print(el + " "));
+        Consumer<int[]> print = arr -> Arrays.stream(arr)
+                .forEach(el -> System.out.print(el + " "));
 
         String comand = scan.nextLine();
 
