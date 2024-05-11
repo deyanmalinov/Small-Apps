@@ -1,13 +1,15 @@
 package com.DPM;
-
 import java.util.*;
-
 public class StringExplosion {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+
+       Scanner scan = new Scanner(System.in);
+
        String text = scan.nextLine();
+
        String res = "";
-        for (int i = 0; i < text.length(); i++) {
+
+       for (int i = 0; i < text.length(); i++) {
             char bomb = text.charAt(i);
             if (bomb =='>'){
                 res+=bomb;
