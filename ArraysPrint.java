@@ -9,7 +9,8 @@ public class ArraysPrint {
         }
     }
 
-    public static int[] arrayOfMultiples(int num, int length) {
+
+    static int[] arrayOfMultiples(int num, int length) {
 
             int[] nums = new int[length];
 
