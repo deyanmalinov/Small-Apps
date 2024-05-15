@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.*;
 
-public class Main {
+public class CompanyRoster {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int lines = Integer.parseInt(scan.nextLine());
@@ -10,7 +10,7 @@ public class Main {
         while (lines-- > 0 ){
             String[] line = scan.nextLine().split(" ");
             String departmentName = line[3];
-            Employee emp = new Employee(line[0],Double.parseDouble(line[1]),line[2]);
+            Employees emp = new Employees(line[0],Double.parseDouble(line[1]),line[2]);
             if (line.length==5){
                 if (Character.isDigit(line[4].charAt(0))){
                     emp.setAge(Integer.parseInt(line[4]));
@@ -26,7 +26,8 @@ public class Main {
             }
             deparments.get(departmentName).addEmployee(emp);
         }
-        Map.Entry<String, Department> bigSal= deparments.entrySet().stream().sorted((first, second) ->{
+        Map.Entry<String, Department> bigSal= deparments.entrySet().stream().sorted((first,
+                                                                                     second) ->{
             int result = 0;
             if (second.getValue().getAvaregeSalery() > first.getValue().getAvaregeSalery()){
                 result = 1;
@@ -36,19 +37,21 @@ public class Main {
             return result;
         }).findFirst().get();
         System.out.println(String.format("Highest Average Salary: %s", bigSal.getKey()));
-        bigSal.getValue().getEmployees().stream().sorted((f,s) -> Double.compare(s.getSalary(), f.getSalary())).forEach(employee -> {
-            System.out.println(String.format("%s %.2f %s %d", employee.getName(), employee.getSalary(), employee.getEmail(), employee.getAge()));
+        bigSal.getValue().getEmployees().stream().sorted((f,s) ->
+                Double.compare(s.getSalary(), f.getSalary())).forEach(employee -> {
+            System.out.println(String.format("%s %.2f %s %d", employee.getName(),
+                    employee.getSalary(), employee.getEmail(), employee.getAge()));
         });
     }
 }
 
-public class Employee {
+class Employees {
     private String name;
     private double salary;
     private String position;
     private String email;
     private int age;
-    public Employee(String name, double salary, String position){
+    public Employees(String name, double salary, String position){
         this.name=name;
         this.salary=salary;
         this.position=position;
@@ -76,15 +79,15 @@ public class Employee {
 }
 
 
-public class Department {
-    private List<Employee> employees;
+class Department {
+    private List<Employees> employees;
     public Department(){
         this.employees = new ArrayList<>();
     }
-    public List<Employee> getEmployees(){
+    public List<Employees> getEmployees(){
         return this.employees;
     }
-    public void addEmployee(Employee employee){
+    public void addEmployee(Employees employee){
         this.employees.add(employee);
     }
     public double getAvaregeSalery(){

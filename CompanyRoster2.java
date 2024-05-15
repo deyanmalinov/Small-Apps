@@ -2,7 +2,7 @@ package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-public class Main {
+public class CompanyRoster2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
@@ -34,7 +34,7 @@ public class Main {
     }
 }
 
-public class Employee {
+class Employee {
     private final static String NO_EMAIL = "n/a";
     private final static int NO_AGE = -1;
     private String name;
