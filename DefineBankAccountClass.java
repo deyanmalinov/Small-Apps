@@ -1,16 +1,23 @@
 package com.DPM;
 public class DefineBankAccountClass {
     public static void main(String[] args) {
+
         BankAccounts acc = new BankAccounts();
+
  		acc.setId(1);
+
         acc.setBalance(15);
+
         acc.withdraw(5);
+
  		System.out.printf("Account ID%d, balance %.2f"
-                ,acc.getId(),acc.getBalance());
+                ,acc.getId()
+                ,acc.getBalance());
 	}
 }
 
 class BankAccounts {
+
     public int getId() {
         return id;
     }
@@ -32,6 +39,7 @@ class BankAccounts {
     private double amaunt;
     private int id;
     private double balance;
+
     @Override
     public String toString(){
         return "ID" + this.id;
