@@ -2,9 +2,10 @@ package com.DPM;
 import java.util.*;
 public class Articles1 {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
             String [] line = scan.nextLine().split(", ");
-            Article art = new Article(line[0], line[1], line[2]);
+            Articles2 art = new Articles2(line[0], line[1], line[2]);
 
             int num = Integer.parseInt(scan.nextLine());
 
