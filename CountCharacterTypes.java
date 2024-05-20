@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-public class Main {
+public class CountCharacterTypes {
     public static void main(String[] args) throws IOException {
         String path = "D:\\Coding\\BG_Softuni\\Java Advanced - January 2019" +
                 "\\04.1. Java-Advanced-Files-and-Directories-Exercises\\" +

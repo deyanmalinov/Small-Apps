@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Consumer;
 
-public class Main {
+public class ConsumerPrintFunctionalProgramming_Exercises {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] line = scan.nextLine().split("\\s+");
