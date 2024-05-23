@@ -1,8 +1,11 @@
 package com.DPM;
 
 public class Articles2 {
+
     private String title;
+
     private String content;
+
     private String author;
 
     public String getTitle() {
