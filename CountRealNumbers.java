@@ -1,7 +1,7 @@
 package com.DPM;
 import java.text.DecimalFormat;
 import java.util.*;
-public class Main {
+public class CountRealNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double [] nums = Arrays.stream(scan.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
