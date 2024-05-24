@@ -1,15 +1,17 @@
 package com.DPM;
-
-        import java.util.*;
-
+import java.util.*;
 public class BalancedParentheses {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         char[] breces = scan.nextLine().toCharArray();
+
         if (breces.length % 2 != 0){
             System.out.println("NO");
             return;
         }
+
         Deque<Character> openBr = new ArrayDeque<>();
         boolean isBal = true;
         for (char brece : breces) {
