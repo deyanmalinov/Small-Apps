@@ -3,8 +3,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
 public class BacktrakingFindAllPathsInALabyrinth {
+
     static List<Character> path = new ArrayList<>();
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -24,6 +24,7 @@ public class BacktrakingFindAllPathsInALabyrinth {
         }
     }
     private static void findPath(char[][] maze, int row, int col, char direction){
+
         if (!isInBounds(maze, row, col)){
             return;
         }
