@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Main {
+public class CreateReadAndWriteInFiles {
         public static void main(String[] args) throws IOException {
                 File file = new File(FILE_PATH);
                 BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -23,5 +23,6 @@ public class Main {
 //              }
 
         }
-        private static final String FILE_PATH = "D://Coding/Java/Softuni/Java Fundamentals  2016/3. Java-Streams/users.txt";
+        private static final String FILE_PATH = "D://Coding/Java/Softuni/Java Fundamentals  " +
+                "2016/3. Java-Streams/users.txt";
 }

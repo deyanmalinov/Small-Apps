@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
-public class Main {
+public class CountUppercaseWords2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] textAsList = scan.nextLine().split("\\s+");
