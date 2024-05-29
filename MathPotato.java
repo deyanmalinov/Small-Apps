@@ -1,14 +1,19 @@
 package com.DPM;
 import java.util.ArrayDeque;
 import java.util.Scanner;
-
 public class MathPotato {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String[] line = scan.nextLine().split("\\s+");
+
         int num = Integer.parseInt(scan.nextLine());
+
         ArrayDeque<String> queue = new ArrayDeque<>();
+
         int prime = 1;
+
         for (int i = 0; i < line.length; i++) {
             queue.offer(line[i]);
         }
