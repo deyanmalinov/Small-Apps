@@ -4,10 +4,15 @@ import java.util.Map;
 import java.util.Scanner;
 public class BankAccountTestClient {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         Map<Integer, BankAccount> accounts = new HashMap<>();
+
         String line = scan.nextLine();
+
         BankAccount account = new BankAccount();
+
         while (!line.equals("End")){
             String[] comand = line.split(" ");
             int id = Integer.parseInt(comand[1]);
@@ -57,27 +62,37 @@ public class BankAccountTestClient {
 
 
 class BankAccount {
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public double getBalance() {
         return balance;
     }
+
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
     public void deposit(double amaunt){
         this.balance+=amaunt;
     }
+
     public void withdraw(double amaunt){
         this.balance-=amaunt;
     }
+
     private double amaunt;
+
     private int id;
+
     private double balance;
+
     @Override
     public String toString(){
         return String.format("Account ID%d, balance %.2f"
