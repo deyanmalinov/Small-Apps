@@ -1,6 +1,6 @@
 package com.DPM;
 
-public class DiffrenceInArr {
+public class DiffrenceInArrays {
     public static void main(String[] args) {
         int[] array = {10, 5, 3, 8, -15};
         int difference = findDifference(array);

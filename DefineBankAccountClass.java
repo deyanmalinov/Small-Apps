@@ -1,7 +1,7 @@
 package com.DPM;
-public class Main {
+public class DefineBankAccountClass {
     public static void main(String[] args) {
-        BankAccount acc = new BankAccount();
+        BankAccounts acc = new BankAccounts();
  		acc.setId(1);
         acc.setBalance(15);
         acc.withdraw(5);
@@ -10,7 +10,7 @@ public class Main {
 	}
 }
 
-public class BankAccount {
+class BankAccounts {
     public int getId() {
         return id;
     }
@@ -36,7 +36,7 @@ public class BankAccount {
     public String toString(){
         return "ID" + this.id;
     }
-    public BankAccount() {
+    public BankAccounts() {
         this.id = id;
         this.balance = balance;
     }

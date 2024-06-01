@@ -1,11 +1,13 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class DiagonalDifference {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
         int matSize = Integer.parseInt(scan.nextLine());
         int[][] matrix = new int[matSize][matSize];
         int sum = 0; int sum2 = 0;
+
         for (int row = 0; row < matSize; row++) {
             String[] line = scan.nextLine().split(" ");
             for (int col = 0; col < matSize; col++) {
