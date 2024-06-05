@@ -3,17 +3,22 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class StringMatrixRotation {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         String[] rotate = scan.nextLine().split("[ () ]+");
+
         int angle = Integer.parseInt(rotate[1]) % 360;
+
         ArrayList<String> array = new ArrayList<>();
+
         String line = scan.nextLine();
+
         int maxLen = line.length();
 
         while (!line.equals("END")){
             array.add(line);
             line = scan.nextLine();
-
             if (maxLen < line.length()){
                 maxLen = line.length();
             }
