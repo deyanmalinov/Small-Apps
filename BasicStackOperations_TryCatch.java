@@ -1,15 +1,22 @@
 package com.DPM;
 import java.util.*;
-
 public class BasicStackOperations_TryCatch {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String[] three = scan.nextLine().split(" ");
+
         int nums = Integer.parseInt(three[0]);
+
         int remove = Integer.parseInt(three[1]);
+
         int chech = Integer.parseInt(three[2]);
+
         String[] line = scan.nextLine().split(" ");
+
         Deque<Integer> stack = new ArrayDeque<>();
+
         for (int i = 0; i < line.length; i++) {
             stack.push(Integer.parseInt(line[i]));
         }
