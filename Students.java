@@ -1,12 +1,13 @@
 package com.DPM;
-
 public class Students {
+
     private String fname;
     private String sname;
     private String age;
     private String town;
 
     public Students(String fname, String sname, String age, String town) {
+
         this.fname = fname;
         this.sname = sname;
         this.age = age;
