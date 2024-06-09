@@ -1,13 +1,13 @@
 package com.DPM;
-
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.Scanner;
-
 public class MinEvenNumber {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         Optional<Double> nums = Arrays.stream(scan.nextLine().split(" "))
                 .filter(num -> !num.isEmpty())
                 .map(Double::valueOf)
