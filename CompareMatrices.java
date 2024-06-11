@@ -1,12 +1,14 @@
 package com.DPM;
-
 import java.util.Scanner;
-
 public class CompareMatrices {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         String [] matrixSize = scan.nextLine().split(" ");
+
         int row = Integer.parseInt(matrixSize[0]);
+
         int col = Integer.parseInt(matrixSize[1]);
 
         int [][] matrix = new int[row][col];
@@ -20,7 +22,9 @@ public class CompareMatrices {
         }
 
         String [] matrixSize2 = scan.nextLine().split(" ");
+
         int row2 = Integer.parseInt(matrixSize2[0]);
+
         int col2 = Integer.parseInt(matrixSize2[1]);
 
         int [][] matrix2 = new int[row2][col2];
