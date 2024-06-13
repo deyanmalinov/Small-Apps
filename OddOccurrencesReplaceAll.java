@@ -1,12 +1,14 @@
 package com.DPM;
-
 import java.util.*;
-
 public class OddOccurrencesReplaceAll {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
+
             String [] line = scan.nextLine().split(" ");
+
             Map <String, Integer> someMap = new LinkedHashMap<>();
+
             for (String s : line) {
                 String word = s.toLowerCase();
                 if (someMap.containsKey(word)){
