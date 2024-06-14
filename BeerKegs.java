@@ -2,11 +2,17 @@ package com.DPM;
 import java.util.*;
 public class BeerKegs {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int beerNum = Integer.parseInt(scan.nextLine());
+
         String beerName, bearNameBig="";
+
         double rad, volume, bigVolume=0;
+
         int hig;
+
         while (beerNum>0){
             beerName = scan.nextLine();
             rad = Double.parseDouble(scan.nextLine());
