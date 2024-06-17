@@ -1,7 +1,5 @@
 package com.DPM;
-
 import java.math.BigInteger;
-
 public class BigIntegerForLoop {
     public static void main(String[] args) {
 
