@@ -2,10 +2,12 @@ package com.DPM;
 import java.util.*;
 public class BrowserHistory {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
 
         ArrayDeque<String> web = new ArrayDeque<>();
-       String line ;
+
+        String line ;
 
         while (!"Home".equalsIgnoreCase(line = scan.nextLine())){
             if (!"back".equalsIgnoreCase(line)){
