@@ -1,12 +1,14 @@
 package com.DPM;
-
 import java.util.*;
-
 public class MultiplyBigNumber {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String num = scan.nextLine();
+
         int mult = Integer.parseInt(scan.nextLine());
+
         if (mult==0){
             System.out.println(0);
         }else {
@@ -23,7 +25,6 @@ public class MultiplyBigNumber {
             }
             for (int i = result.size()-1; i >=0 ; i--) {
                 System.out.print(result.get(i));
-
             }
             System.out.println();
         }
