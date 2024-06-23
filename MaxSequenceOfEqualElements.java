@@ -29,5 +29,5 @@ public class MaxSequenceOfEqualElements {
             for (int i = 0; i < mLen; i++) {
                 System.out.print(bInd + " ");
             }
-        }
+       }
 }
