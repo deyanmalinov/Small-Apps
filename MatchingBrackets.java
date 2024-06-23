@@ -20,5 +20,5 @@ public class MatchingBrackets {
                 System.out.println(contents);
             }
         }
-     }
+    }
 }
