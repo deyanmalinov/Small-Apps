@@ -9,7 +9,7 @@ public class MiddleCharacters {
 
             System.out.println(printMidle(line));
  }
-    public static String printMidle (String s){
+        public static String printMidle (String s){
 
             String res = "";
             int midInd = s.length()/2;
