@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.*;
-public class MaximumElement_MaxNumber {
+public class MaximumElement_1 {
     public static void main(String[] args){
 
         Scanner scan = new Scanner(System.in);
