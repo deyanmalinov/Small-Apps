@@ -1,10 +1,7 @@
 package com.DPM;
-
-
 import java.util.*;
 import java.util.stream.Stream;
-
-public class Main {
+public class FirstNameOptional {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         List<String> names = Arrays.asList(scan.nextLine().split(" "));
