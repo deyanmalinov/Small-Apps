@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
-public class Main {
+public class FindEvensOrOdds {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] line = scan.nextLine().split(" ");
