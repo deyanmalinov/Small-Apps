@@ -4,9 +4,13 @@ import java.util.List;
 import java.util.Scanner;
 public class BorderControl {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         List<Identifable> things = new ArrayList<>();
+
         String lines;
+
         while (true){
             if ("End".equals(lines=scan.nextLine())){
                 break;
@@ -32,6 +36,7 @@ interface Identifable {
 }
 
 class Citizen implements Identifable {
+
     private String name;
     private int age;
     private String id;
@@ -47,6 +52,7 @@ class Citizen implements Identifable {
 }
 
 class Robot implements Identifable {
+
     private String model;
     private String  id;
     public Robot(String model, String id) {
