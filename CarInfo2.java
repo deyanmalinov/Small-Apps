@@ -3,8 +3,11 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 public class CarInfo2 {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int num = Integer.parseInt(scan.nextLine());
+
         IntStream
                 .rangeClosed(1, num)
                 .boxed()
@@ -21,8 +24,9 @@ public class CarInfo2 {
 }
 
 class Cars123 {
-        private String make;
-        public String getMake() {
+
+    private String make;
+    public String getMake() {
         return make;
     }
     public void setMake(String make) {
