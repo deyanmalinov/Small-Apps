@@ -2,10 +2,15 @@ package com.DPM;
 import java.util.Scanner;
 public class IntersectionOfTwoMatrices {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         int rows = Integer.parseInt(scan.nextLine());
+
         int cols = Integer.parseInt(scan.nextLine());
+
         char[][] fMatrix = new char[rows][cols];
+
         char[][] sMatrix = new char[rows][cols];
 
         for (int row = 0; row < fMatrix.length; row++) {
@@ -28,9 +33,7 @@ public class IntersectionOfTwoMatrices {
                 }else {
                     System.out.print(fMatrix[row][col]+ " ");
                 }
-
             }
-
         }
     }
 }
