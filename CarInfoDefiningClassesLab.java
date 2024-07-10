@@ -2,9 +2,13 @@ package com.DPM;
 import java.util.Scanner;
 public class CarInfoDefiningClassesLab {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         Kolite newCar = new Kolite();
+
         int num = Integer.parseInt(scan.nextLine());
+
         String[] line = scan.nextLine().split("\\s+");
 
         for (int i = 0; i < num; i++) {
@@ -20,7 +24,8 @@ public class CarInfoDefiningClassesLab {
 }
 
 class Kolite {
-        private String make;
+
+    private String make;
     public String getMake() {
         return make;
     }
@@ -33,7 +38,6 @@ class Kolite {
     public void setModel(String model) {
         this.model = model;
     }
-
     public int getHorsePower() {
         return horsePower;
     }
@@ -41,5 +45,5 @@ class Kolite {
         this.horsePower = horsePower;
     }
     private String model;
-        private int horsePower;
+    private int horsePower;
 }
