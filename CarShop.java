@@ -1,11 +1,16 @@
 package com.DPM;
-
 import java.io.Serializable;
 import java.util.Scanner;
 public class CarShop {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        Koli seat = new Seat("Leon", "gray", 110, "Spain");
+
+        Koli seat = new Seat("Leon",
+                "gray",
+                110,
+                "Spain");
+
         System.out.println(seat.toString());
     }
 }
