@@ -2,7 +2,9 @@ package com.DPM;
 import java.util.Scanner;
 public class Problem2BookShop {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         try {
             String author = scan.nextLine();
             String title = scan.nextLine();
@@ -16,7 +18,6 @@ public class Problem2BookShop {
         }
     }
 }
-
 class Book {
     private String author;
     private String title;
@@ -68,7 +69,6 @@ class Book {
         return sb.toString();
     }
 }
-
 class GoldenEditionBook extends Book{
     public GoldenEditionBook(String author, String title, double price){
         super(author, title, price);
