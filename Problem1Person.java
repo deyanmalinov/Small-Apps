@@ -2,9 +2,13 @@ package com.DPM;
 import java.util.Scanner;
 public class Problem1Person {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String name = scan.nextLine();
+
         int age = Integer.parseInt(scan.nextLine());
+
         try {
             Children child = new Children(name, age);
             System.out.println(child.toString());
@@ -13,7 +17,6 @@ public class Problem1Person {
         }
     }
 }
-
 class Personi {
     private int age;
     private String name;
@@ -44,7 +47,6 @@ class Personi {
         return String.format("Name: %s, Age: %d", this.getName(), this.getAge());
     }
 }
-
 class Children extends Personi {
     public Children(String name, int age){
         super(name, age);
