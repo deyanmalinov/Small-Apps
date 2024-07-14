@@ -8,7 +8,6 @@ public class DiffrenceInArrays {
 
         System.out.println("Difference " + difference);
     }
-
     public static int findDifference(int[] array) {
 
         int min = array[0];
@@ -22,7 +21,6 @@ public class DiffrenceInArrays {
                 max = array[i];
             }
         }
-
         int difference = max - min;
 
         return difference;
