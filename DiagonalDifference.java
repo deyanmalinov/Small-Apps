@@ -17,15 +17,12 @@ public class DiagonalDifference {
                 matrix[row][col] = Integer.parseInt(line[col]);
             }
         }
-
         for (int col = 0; col < matSize; col++) {
                 sum = matrix[col][col] + sum;
         }
-
         for (int col = 0; col < matSize; col++) {
             sum2 = matrix[col][matSize-1-col] + sum2;
         }
-
         if (sum>sum2){
             System.out.println(sum-sum2);
         }else {
