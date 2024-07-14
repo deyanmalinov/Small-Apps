@@ -2,10 +2,24 @@ package com.DPM;
 import java.util.Scanner;
 public class CarShopExtend {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        Sellable seat = new Seat2("Leon", "gray", 110, "Spain", 11111.1);
-        Rentable audi = new Audi("Leon", "gray", 110, "Spain", 3, 99.9);
+
+        Sellable seat = new Seat2("Leon",
+                "gray",
+                110,
+                "Spain",
+                11111.1);
+
+        Rentable audi = new Audi("Leon",
+                "gray",
+                110,
+                "Spain",
+                3,
+                99.9);
+
         System.out.println(seat.toString());
+
         System.out.println(audi.toString());
     }
 }
