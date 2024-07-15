@@ -6,11 +6,13 @@ public class ChangeList {
 
             Scanner scan = new Scanner(System.in);
 
-            List <String> strList = Arrays.stream(scan.nextLine().split(" ")).collect(Collectors.toList());
+            List <String> strList = Arrays.stream(scan.nextLine()
+                    .split(" "))
+                    .collect(Collectors.toList());
 
             String line = scan.nextLine();
-            while (!line.equals("end")){
 
+            while (!line.equals("end")){
                 String [] comTwo = line.split(" ");
                 String cmd = comTwo[0];
                 line = scan.nextLine();
