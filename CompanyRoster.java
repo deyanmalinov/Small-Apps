@@ -1,12 +1,14 @@
 package com.DPM;
-
 import java.util.*;
-
 public class CompanyRoster {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int lines = Integer.parseInt(scan.nextLine());
+
         HashMap<String, Department> deparments = new HashMap<>();
+
         while (lines-- > 0 ){
             String[] line = scan.nextLine().split(" ");
             String departmentName = line[3];
@@ -26,8 +28,9 @@ public class CompanyRoster {
             }
             deparments.get(departmentName).addEmployee(emp);
         }
-        Map.Entry<String, Department> bigSal= deparments.entrySet().stream().sorted((first,
-                                                                                     second) ->{
+        Map.Entry<String, Department> bigSal= deparments.entrySet()
+                .stream().
+                sorted((first,second) ->{
             int result = 0;
             if (second.getValue().getAvaregeSalery() > first.getValue().getAvaregeSalery()){
                 result = 1;
@@ -46,6 +49,7 @@ public class CompanyRoster {
 }
 
 class Employees {
+
     private String name;
     private double salary;
     private String position;
@@ -80,6 +84,7 @@ class Employees {
 
 
 class Department {
+
     private List<Employees> employees;
     public Department(){
         this.employees = new ArrayList<>();
