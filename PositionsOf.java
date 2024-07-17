@@ -2,9 +2,13 @@ package com.DPM;
 import java.util.Scanner;
 public class PositionsOf {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         String[] matSize = scan.nextLine().split(" ");
+
         int rows = Integer.parseInt(matSize[0]);
+
         int cols = Integer.parseInt(matSize[1]);
 
         int[][] matrix = new int[rows][cols];
@@ -23,12 +27,9 @@ public class PositionsOf {
                     System.out.println(i + " "+ j);
                     flag = true;
                 }
-
             }
-
         }if (!flag){
             System.out.print("not found");
         }
-
     }
 }
