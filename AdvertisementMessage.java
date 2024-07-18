@@ -30,7 +30,6 @@ public class AdvertisementMessage {
                         events[rnd.nextInt(events.length)],
                         authors[rnd.nextInt(authors.length)],
                         cities[rnd.nextInt(cities.length)]);
-
             }
         }
 }
