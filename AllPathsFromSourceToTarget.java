@@ -2,22 +2,23 @@ package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
 public class AllPathsFromSourceToTarget {
+
     private final int vertices;
+
     private List<List<Integer>> nm = new ArrayList<>();
+
     private List<Integer>[] adjList;
 
     public AllPathsFromSourceToTarget(int vertices) {
         this.vertices = vertices;
         initAdjList();
     }
-
     private void initAdjList() {
         adjList = new ArrayList[vertices];
         for (int i = 0; i < vertices; i++) {
             adjList[i] = new ArrayList<>();
         }
     }
-
     public void addEdge(int u, int v) {
         adjList[u].add(v);
     }
@@ -29,7 +30,6 @@ public class AllPathsFromSourceToTarget {
         storeAllPathsUtil(source, destination, isVisited, pathList);
         return nm;
     }
-
     private void storeAllPathsUtil(int u,
                                    int d,
                                    boolean[] isVisited,
@@ -48,7 +48,6 @@ public class AllPathsFromSourceToTarget {
         }
         isVisited[u] = false;
     }
-
     public static List<List<Integer>> allPathsFromSourceToTarget(int vertices,
                                                                  int[][] edges,
                                                                  int source,
