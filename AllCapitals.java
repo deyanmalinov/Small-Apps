@@ -1,6 +1,6 @@
 package com.DPM;
 import java.io.*;
-public class ALL_CAPITALS {
+public class AllCapitals {
     public static void main(String[] args) throws IOException {
 
         String path = "D:\\Coding\\BG_Softuni\\Java Advanced - January 2019" +
