@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.*;
-public class Main {
+public class HouseParty {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             int lines = Integer.parseInt(scan.nextLine());
