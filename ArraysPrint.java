@@ -8,8 +8,6 @@ public class ArraysPrint {
             System.out.print(i);
         }
     }
-
-
     static int[] arrayOfMultiples(int num, int length) {
 
             int[] nums = new int[length];
