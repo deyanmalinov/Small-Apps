@@ -11,7 +11,6 @@ public class BalancedParentheses {
             System.out.println("NO");
             return;
         }
-
         Deque<Character> openBr = new ArrayDeque<>();
         boolean isBal = true;
         for (char brece : breces) {
