@@ -1,13 +1,15 @@
 package com.DPM;
-
 import java.util.Scanner;
-
 public class CharacterMultiplier {
         public static void main(String[] args) {
+
          Scanner scan = new Scanner(System.in);
+
          String [] line = scan.nextLine().split(" ");
-           int res = sumOfChars(line[0], line[1]);
-            System.out.println(res);
+
+         int res = sumOfChars(line[0], line[1]);
+
+         System.out.println(res);
         }
 
     private static int sumOfChars(String s, String s1) {
