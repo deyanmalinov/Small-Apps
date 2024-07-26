@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.*;
 public class CommonElements {
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -15,9 +15,7 @@ public class CommonElements {
                     System.out.print(smas[i]+" ");
                     break;
                 }
-
             }
-
         }
     }
 }
