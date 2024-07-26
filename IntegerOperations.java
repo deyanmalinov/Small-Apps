@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.*;
 
-public class Main {
+public class IntegerOperations {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             long fnum = Long.parseLong(scan.nextLine());
