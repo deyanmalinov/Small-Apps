@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public class LegendaryFarming {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Map<String, Integer> keyMaterial = new LinkedHashMap<>();
