@@ -6,12 +6,16 @@ import java.util.Scanner;
 public class BacktrakingFindAllPathsInALabyrinth {
 
     static List<Character> path = new ArrayList<>();
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int rows = Integer.parseInt(scan.nextLine());
-        int cols = Integer.parseInt(scan.nextLine());
-        char[][] maze = new char[rows][cols];
 
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        int rows = Integer.parseInt(scan.nextLine());
+
+        int cols = Integer.parseInt(scan.nextLine());
+
+        char[][] maze = new char[rows][cols];
 
         for (int row = 0; row < rows; row++) {
             maze[row] = scan.nextLine().toCharArray();
@@ -52,7 +56,6 @@ public class BacktrakingFindAllPathsInALabyrinth {
         maze[row][col] = '-';
 
         path.remove(path.size() - 1);
-
     }
     private static void printPath(){
         path.remove(0);
