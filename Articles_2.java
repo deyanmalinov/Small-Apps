@@ -1,6 +1,5 @@
 package com.DPM;
-
-public class Articles2 {
+public class Articles_2 {
 
     private String title;
 
@@ -32,7 +31,7 @@ public class Articles2 {
         this.author = author;
     }
 
-    public Articles2(String title, String content, String author) {
+    public Articles_2(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
