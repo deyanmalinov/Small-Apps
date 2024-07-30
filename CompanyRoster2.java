@@ -4,9 +4,13 @@ import java.util.List;
 import java.util.Scanner;
 public class CompanyRoster2 {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int num = Integer.parseInt(scan.nextLine());
+
         List<Employee> employees= new ArrayList<>();
+
         for (int i = 0; i < num; i++) {
             String[] line = scan.nextLine().split(" ");
             String name = line[0];
@@ -67,6 +71,10 @@ class Employee {
         return salary;
     }
     public String toString(){
-        return String.format("%s %.2f %s %d", this.name, this.salary, this.email, this.age);
+        return String.format("%s %.2f %s %d",
+                this.name,
+                this.salary,
+                this.email,
+                this.age);
     }
 }
