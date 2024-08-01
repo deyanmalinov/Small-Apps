@@ -3,7 +3,7 @@ package com.DPM;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Largest3Numbers {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             System.out.println(Arrays.stream(scan.nextLine().split(" "))
