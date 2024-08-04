@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.*;
-public class Main {
+public class MagicSum {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String [] line = scan.nextLine().split(" ");
