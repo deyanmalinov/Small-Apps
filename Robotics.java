@@ -2,13 +2,17 @@ package com.DPM;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
-
 public class Robotics {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         String [] line = scan.nextLine().split(";");
+
         String [] robots = new String[line.length];
+
         int [] procTime = new int[line.length];
+
         int [] workTime = new int[line.length];
 
         for (int i = 0; i < line.length; i++) {
@@ -19,8 +23,6 @@ public class Robotics {
         }
         String startTime = scan.nextLine();
 
-
-
         Deque<String> products = new ArrayDeque<>();
 
         String end = scan.nextLine();
@@ -30,15 +32,18 @@ public class Robotics {
             end = scan.nextLine();
         }
         String [] timeData = startTime.split(":");
+
         int hours = Integer.parseInt(timeData[0]);
+
         int min = Integer.parseInt(timeData[1]);
+
         int sec = Integer.parseInt(timeData[2]);
+
         int begSec = hours * 3600 + min * 60 + sec;
 
         while (!products.isEmpty()) {
             begSec++;
             String prod = products.poll();
-
             boolean isAssigned = false;
             for (int i = 0; i < robots.length; i++) {
                 if (workTime[i] == 0 && !isAssigned) {
@@ -49,15 +54,12 @@ public class Robotics {
                 if (workTime[i] > 0) {
                     workTime[i]--;
                 }
-
             }
             if (!isAssigned){
                 products.offer(prod);
             }
         }
-
     }
-
     private static void printRobotData(String robot, String prod, int begSec) {
         long s = begSec % 60;
         long m = (begSec / 60)% 60;
