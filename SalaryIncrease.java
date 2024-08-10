@@ -5,10 +5,15 @@ import java.util.List;
 import java.util.Scanner;
 public class SalaryIncrease {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int lines = Integer.parseInt(scan.nextLine());
+
         List<Person> people = new ArrayList<>();
+
         Person man = null;
+
         for (int i = 0; i < lines; i++) {
             String[] line = scan.nextLine().split(" ");
             String fname = line[0];
@@ -27,8 +32,8 @@ public class SalaryIncrease {
         }
     }
 }
-//------------------------------------------------------------------------
 class Person {
+
     private String fname;
     private String sname;
     private int age;
