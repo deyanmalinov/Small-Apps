@@ -2,7 +2,7 @@ package com.DPM;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class Main {
+public class Mankind {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String[] lineStudent = reader.readLine().split("\\s+");
@@ -18,7 +18,7 @@ public class Main {
         }
     }
 }
-public class Human {
+class Human {
     private String fname;
     private String sname;
     public Human(String fname, String sname){
@@ -58,7 +58,7 @@ public class Human {
         return human.toString();
     }
 }
-public class Student extends Human{
+class Student extends Human{
     private String number;
     public Student(String fname, String sname, String number){
         super(fname, sname);
@@ -81,7 +81,7 @@ public class Student extends Human{
         return student.toString();
     }
 }
-public class Worker extends Human{
+class Worker extends Human{
     private double salary;
     private double hours;
     public Worker(String fname, String sname, double salary, double hours){
