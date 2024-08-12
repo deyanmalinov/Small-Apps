@@ -2,10 +2,15 @@ package com.DPM;
 import java.util.Scanner;
 public class ShapesDrawing {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+
         Drawables circle = new Circles(4);
+
         Drawables rectangle = new Rectangles(9,9);
+
         circle.draw();
+
         rectangle.draw();
     }
 }
