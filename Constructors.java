@@ -3,8 +3,11 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 public class Constructors {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int num = Integer.parseInt(scan.nextLine());
+
         IntStream
                 .rangeClosed(1, num)
                 .boxed()
