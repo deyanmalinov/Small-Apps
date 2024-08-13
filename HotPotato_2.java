@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.ArrayDeque;
 import java.util.Scanner;
-public class HotPotato2 {
+public class HotPotato_2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
