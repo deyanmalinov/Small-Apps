@@ -46,7 +46,6 @@ public class ListOperations {
                             }
                         }
                         break;
-
                 }
                 line = scan.nextLine();
             }
