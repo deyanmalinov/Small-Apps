@@ -14,11 +14,10 @@ public class HouseParty {
                 String [] sline = com.split(" ");
                 if (!com.contains("not")){
                     String name = sline[0];
-
                     if (line.contains(name)){
-                        System.out.println(name + " is already in the list!");
-                    }else {
-                        line.add(name);
+                    System.out.println(name + " is already in the list!");
+                }else{
+                    line.add(name);
                     }
                 }else{
                     String name = sline[0];
