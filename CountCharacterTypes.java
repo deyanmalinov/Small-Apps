@@ -5,13 +5,19 @@ import java.io.FileReader;
 import java.io.IOException;
 public class CountCharacterTypes {
     public static void main(String[] args) throws IOException {
+
         String path = "D:\\Coding\\BG_Softuni\\Java Advanced - January 2019" +
                 "\\04.1. Java-Advanced-Files-and-Directories-Exercises\\" +
                 "04. Java-Advanced-Files-and-Streams-Exercises-Resources\\input.txt";
+
         BufferedReader reader = new BufferedReader(new FileReader(path));
+
         int vouel = 0;
+
         int conso = 0;
+
         int punkt = 0;
+
         try {
             String line = reader.readLine();
             while (line != null){
