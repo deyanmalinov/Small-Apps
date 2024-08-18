@@ -22,17 +22,14 @@ public class EqualArrays {
             for (int i = 0; i < oiArr.length; i++) {
                 oiArr[i] = Integer.parseInt(oArr[i]);
             }
-
             for (int i = 0; i < tiArr.length; i++) {
                 tiArr[i] = Integer.parseInt(tArr[i]);
             }
-
             if (Arrays.equals(tiArr, oiArr)){
 
             for (int i = 0; i < tiArr.length; i++) {
                     sum += tiArr[i];
             }
-
             System.out.println("Arrays are identical. Sum: " + sum);
             }
             else {
@@ -40,8 +37,8 @@ public class EqualArrays {
                     if (tiArr[i] != oiArr[i]) {
                         System.out.println("Arrays are not identical. Found difference at "+ i +" index.");
                         break;
-                    }
                 }
             }
+        }
     }
 }
