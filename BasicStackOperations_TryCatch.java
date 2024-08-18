@@ -27,7 +27,6 @@ public class BasicStackOperations_TryCatch {
         if (cont){
             System.out.println(cont);
         }else {
-
             int [] arr = {nums - remove};
             for (int i = 0; i < arr.length; i++) {
                 try {
@@ -35,12 +34,9 @@ public class BasicStackOperations_TryCatch {
                 }
                 catch(Exception e) {
                 }
-
             }
-
             Arrays.sort(arr);
             System.out.println(arr[0]);
         }
-
     }
 }
