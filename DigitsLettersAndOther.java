@@ -28,7 +28,6 @@ public class DigitsLettersAndOther {
                 cif.add(line.group("cif"));
                nish.add(line.group("nish"));
             }
-
             System.out.println(cif.toString().replaceAll(", ", "")
                     .replaceAll("\\[|\\]", ""));
             System.out.println(buk.toString().replaceAll(", ", "")
