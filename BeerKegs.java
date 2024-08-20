@@ -21,11 +21,9 @@ public class BeerKegs {
             if (volume>bigVolume){
                 bigVolume=volume;
                 bearNameBig=beerName;
-
             }
             beerNum--;
         }
         System.out.println(bearNameBig);
-
     }
 }
