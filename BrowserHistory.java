@@ -21,7 +21,6 @@ public class BrowserHistory {
                     System.out.println("no previous URLs");
                 }
             }
-
         }
     }
 }
