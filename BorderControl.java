@@ -30,7 +30,6 @@ public class BorderControl {
                 .forEach(identifable -> System.out.println(identifable.getId()));
        }
 }
-
 interface Identifable {
     String getId();
 }
@@ -50,7 +49,6 @@ class Citizen implements Identifable {
         return this.id;
     }
 }
-
 class Robot implements Identifable {
 
     private String model;
