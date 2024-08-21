@@ -1,12 +1,12 @@
 package com.DPM;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
-
 public class CountCharsInAString {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         String line = scan.nextLine();
 
         Map<Character, Integer> lMap = new LinkedHashMap<>();
@@ -20,12 +20,9 @@ public class CountCharsInAString {
                     lMap.put(ch, 1);
                 }
             }
-
         }
         for (Map.Entry<Character, Integer> entry : lMap.entrySet()) {
-
-                System.out.printf("%c -> %d%n", entry.getKey(), entry.getValue());
-
+            System.out.printf("%c -> %d%n", entry.getKey(), entry.getValue());
         }
     }
 }
