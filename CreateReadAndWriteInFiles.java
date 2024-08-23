@@ -1,15 +1,17 @@
 package com.DPM;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-
 public class CreateReadAndWriteInFiles {
         public static void main(String[] args) throws IOException {
+
                 File file = new File(FILE_PATH);
+
                 BufferedReader reader = new BufferedReader(new FileReader(file));
+
                 String line;
+
                 while ((line = reader.readLine()) != null){
                         System.out.println(line);
                 }
@@ -23,6 +25,7 @@ public class CreateReadAndWriteInFiles {
 //              }
 
         }
-        private static final String FILE_PATH = "D://Coding/Java/Softuni/Java Fundamentals  " +
+        private static final String FILE_PATH =
+                "D://Coding/Java/Softuni/Java Fundamentals  " +
                 "2016/3. Java-Streams/users.txt";
 }
