@@ -15,7 +15,6 @@ public class DefineBankAccountClass {
                 ,acc.getBalance());
 	}
 }
-
 class BankAccounts {
 
     public int getId() {
