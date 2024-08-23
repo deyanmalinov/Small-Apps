@@ -11,7 +11,6 @@ public class DecimalToBinary {
             System.out.println(0);
             return;
         }
-
         Deque<Integer> stack = new ArrayDeque<>();
 
         while (num !=0){
