@@ -3,8 +3,12 @@ import java.text.DecimalFormat;
 import java.util.*;
 public class CountRealNumbers {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-        double [] nums = Arrays.stream(scan.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
+
+        double [] nums = Arrays.stream(scan.nextLine().split(" "))
+                .mapToDouble(Double::parseDouble)
+                .toArray();
 
         Map<Double, Integer> newMap = new TreeMap<>();
 
