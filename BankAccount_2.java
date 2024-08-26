@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.Scanner;
-public class BankAccount2 {
+public class BankAccount_2 {
     public static void main(String[] args) {
 
        Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,6 @@ public class BankAccount2 {
                 break;
             }
         }
-
         System.out.println("balance " + balance);
         scanner.close();
     }
