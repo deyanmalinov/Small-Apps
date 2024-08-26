@@ -2,7 +2,7 @@ package com.DPM;
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Scanner;
-public class BasicQueueOperations2 {
+public class BasicQueueOperations_2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
