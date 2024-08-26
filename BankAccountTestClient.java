@@ -59,8 +59,6 @@ public class BankAccountTestClient {
         }
     }
 }
-
-
 class BankAccount {
 
     public int getId() {
