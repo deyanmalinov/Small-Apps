@@ -28,10 +28,7 @@ public class ChangeList {
                         strList.add(index, elem);
                     }
                 }
-
-
             }
-
             System.out.println(strList.toString().replaceAll("[\\[\\],]", ""));
         }
 }
