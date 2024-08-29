@@ -14,15 +14,12 @@ public class CarShop {
         System.out.println(seat.toString());
     }
 }
-
 interface Koli {
     int TIRES = 4;
     String getModel();
     String getColor();
     Integer getHorsePower();
 }
-
-
 class Seat implements Koli, Serializable {
     private String countryProduced;
     private String model;
