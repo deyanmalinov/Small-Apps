@@ -30,17 +30,15 @@ interface Cars2 {
     String getColor();
     Integer getHorsePower();
 }
-
 interface Sellable extends Koli {
     Double getPrice();
 }
-
 interface Rentable extends Koli {
     Integer getMinRentDay();
     Double getPricePerDay();
 }
-
 class Seat2 implements Sellable {
+
     private String countryProduced;
     private String model;
     private String color;
