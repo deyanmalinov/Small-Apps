@@ -11,8 +11,7 @@ public class CharacterMultiplier {
 
          System.out.println(res);
         }
-
-    private static int sumOfChars(String s, String s1) {
+private static int sumOfChars(String s, String s1) {
         int res=0;
         int minLenght = Math.min(s.length(), s1.length());
         for (int i = 0; i < minLenght; i++) {
