@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.Scanner;
 import java.util.stream.IntStream;
-public class CarInfo2 {
+public class CarInfo {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
