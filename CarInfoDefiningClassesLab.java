@@ -22,7 +22,6 @@ public class CarInfoDefiningClassesLab {
         }
     }
 }
-
 class Kolite {
 
     private String make;
