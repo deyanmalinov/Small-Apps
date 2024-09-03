@@ -2,10 +2,15 @@ package com.DPM;
 import java.util.Scanner;
 public class Telephony {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
+
         String[] phones = scan.nextLine().split(" ");
+
         String[] emails = scan.nextLine().split(" ");
+
         Smartphone note10 = new Smartphone();
+
         for (String phone : phones) {
             try {
                 System.out.println(note10.call(phone));
