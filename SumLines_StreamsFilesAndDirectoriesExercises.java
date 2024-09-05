@@ -2,9 +2,11 @@ package com.DPM;
 import java.io.*;
 public class SumLines_StreamsFilesAndDirectoriesExercises {
     public static void main(String[] args) {
+
         String path = "D:\\Coding\\BG_Softuni\\Java Advanced - January 2019" +
                 "\\04.1. Java-Advanced-Files-and-Directories-Exercises\\" +
                 "04. Java-Advanced-Files-and-Streams-Exercises-Resources\\input.txt";
+
         String output = "D:\\Coding\\BG_Softuni\\Java Advanced - January 2019" +
                 "\\04.1. Java-Advanced-Files-and-Directories-Exercises\\" +
                 "04. Java-Advanced-Files-and-Streams-Exercises-Resources\\output.txt";
