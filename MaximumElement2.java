@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Main {
+public class MaximumElement2 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int comands = Integer.parseInt(scan.nextLine());
