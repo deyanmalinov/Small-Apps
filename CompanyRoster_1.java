@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.*;
-public class CompanyRoster {
+public class CompanyRoster_1 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
