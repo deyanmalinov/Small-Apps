@@ -21,7 +21,6 @@ public class ClassBox_DataValidation {
         }
     }
 }
-
 class Box {
     private double length;
     private double width;
