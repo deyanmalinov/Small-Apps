@@ -17,10 +17,8 @@ public class CompareMatrices {
             String[] m1 = scan.nextLine().split(" ");
             for (int j = 0; j < col; j++) {
                 matrix[i][j] = Integer.parseInt(m1[j]);
-
             }
         }
-
         String [] matrixSize2 = scan.nextLine().split(" ");
 
         int row2 = Integer.parseInt(matrixSize2[0]);
@@ -33,16 +31,13 @@ public class CompareMatrices {
             String[] m12 = scan.nextLine().split(" ");
             for (int j = 0; j < col2; j++) {
                 matrix2[i][j] = Integer.parseInt(m12[j]);
-
             }
         }
         if (EqualMatrix(matrix, matrix2)){
             System.out.println("equal");
-
         }else {
             System.out.println("not equal");
         }
-
     }
     public static boolean EqualMatrix(int[][] matrix, int[][] matrix2){
         if (matrix.length != matrix2.length){
