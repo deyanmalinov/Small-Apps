@@ -2,7 +2,7 @@ package com.DPM;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.function.Predicate;
-public class CountUppercaseWords2 {
+public class CountUppercaseWords_2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
