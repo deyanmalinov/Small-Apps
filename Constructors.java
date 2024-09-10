@@ -24,8 +24,6 @@ public class Constructors {
                 .forEach(car -> System.out.println(car.getCarInfo()));
     }
 }
-
-
 class Cars {
     private String make;
     public String getMake() {
