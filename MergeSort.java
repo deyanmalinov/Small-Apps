@@ -1,6 +1,6 @@
 package com.DPM;
 
-public class Main {
+public class MergeSort {
     public static void main(String[] args){
         int[] nums = new int[]{5,6,2,8,1,9,3,4};
         Sort(nums, 0, nums.length - 1);
