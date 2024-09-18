@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Main {
+public class NestedFolders {
     public static void main(String[] args) throws IOException {
         String path = "D:\\Coding\\Java\\Softuni\\Java Advanced - January 2019\\" +
                 "04. Java-Advanced-Fiels-and-Directories-Lab\\04. " +
