@@ -2,11 +2,11 @@ package com.DPM;
 
 public class SpecialArrays {
     public static void main(String[] args) {
-        int[] array1 = {2, 5, 6, 7};
-        int[] array2 = {2, 4, 6, 8};
+        int[] arrayA = {2, 5, 6, 7};
+        int[] arrayB = {2, 4, 6, 8};
 
-        System.out.println("Is array1 special? " + isSpecial(array1));
-        System.out.println("Is array2 special? " + isSpecial(array2));
+        System.out.println("Is array1 special? " + isSpecial(arrayA));
+        System.out.println("Is array2 special? " + isSpecial(arrayB));
     }
 
     public static boolean isSpecial(int[] array) {
