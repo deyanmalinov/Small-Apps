@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public class Orders {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             Map<String, Double> fmap = new LinkedHashMap<>();
