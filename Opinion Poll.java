@@ -6,12 +6,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int lines = Integer.parseInt(scan.nextLine());
-        List<Person> people = new ArrayList<>();
+        List<Personi> people = new ArrayList<>();
         for (int i = 0; i <lines; i++) {
             String[] line = scan.nextLine().split(" ");
             String name = line[0];
             int age = Integer.parseInt(line[1]);
-            Person persona = new Person(name, age);
+            Personi persona = new Personi(name, age);
             people.add(persona);
         }
         people.stream()
