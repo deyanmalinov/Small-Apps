@@ -1,11 +1,12 @@
 package com.DPM;
-
 import java.util.Scanner;
-
 public class TextFilter {
         public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
+
             String [] banWords = scan.nextLine().split(", ");
+
             String line = scan.nextLine();
 
             for (String word : banWords) {
