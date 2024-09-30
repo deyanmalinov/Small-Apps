@@ -1,7 +1,5 @@
 package com.DPM;
-
 import java.util.*;
-
 public class EqualSums {
     public static void main(String[] args) {
 
@@ -35,6 +33,5 @@ public class EqualSums {
             if (ind != true){
                 System.out.println("No");
             }
-        }
-
+    }
 }
