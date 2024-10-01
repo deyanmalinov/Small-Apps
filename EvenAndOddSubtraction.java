@@ -1,7 +1,5 @@
 package com.DPM;
-
 import java.util.*;
-
 public class EvenAndOddSubtraction {
         public static void main(String[] args) {
 
@@ -24,11 +22,7 @@ public class EvenAndOddSubtraction {
                 }else {
                     oddSum += newArr[i];
                 }
-
             }
             System.out.println(evenSum-oddSum);
-            
-
         }
-
 }
