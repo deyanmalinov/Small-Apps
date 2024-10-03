@@ -1,10 +1,8 @@
 package com.DPM;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Scanner;
-import java.util.TreeSet;
 
-public class Main {
+public class ParkingLot {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         HashSet<String> parking = new HashSet<>();
