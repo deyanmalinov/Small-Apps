@@ -2,14 +2,21 @@ package com.DPM;
 import java.util.ArrayDeque;
 public class TowerOfHanoi {
     public static void main(String[] args){
+
         ArrayDeque<Integer> first = new ArrayDeque<>();
+
         first.push(3);
         first.push(2);
         first.push(1);
+
         ArrayDeque<Integer> spare = new ArrayDeque<>();
+
         ArrayDeque<Integer> last = new ArrayDeque<>();
+
         int disk = 3;
+
         Move(3, first, spare, last);
+
         for (Integer integer : last) {
             System.out.println(integer);
         }
@@ -18,7 +25,6 @@ public class TowerOfHanoi {
         if (disk < 1) {
             return;
         }else {
-
             Move(disk -1, first,last,spare);
             last.push(disk);
             first.pop();
