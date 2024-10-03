@@ -3,21 +3,24 @@ import java.util.*;
 import java.util.stream.Collectors;
 public class Train {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
 
         String[] strMas = scan.nextLine().split(" ");
+
         List<Integer> listArr = Arrays.stream(strMas)
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
 
         int maxCap = Integer.parseInt(scan.nextLine());
+
         String line = scan.nextLine();
 
         while (!line.equals("end")){
 
-            String[] comand = line.split(" ");
+        String[] comand = line.split(" ");
 
-            if (comand.length == 2){
+        if (comand.length == 2){
                 int secCom = Integer.parseInt(comand[1]);
                 listArr.add(secCom);
             }else {
@@ -29,7 +32,6 @@ public class Train {
                         listArr.set(i, vagNum+onlyNum);
                         break;
                     }
-
                 }
             }
             line= scan.nextLine();
