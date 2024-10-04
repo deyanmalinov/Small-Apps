@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.*;
 
-public class Main {
+public class PartyProfit {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             int party = Integer.parseInt(scan.nextLine());
