@@ -2,8 +2,11 @@ package com.DPM;
 
 public class PhoneNumberFormat {
     public static void main(String[] args) {
+
         //        phone number format  (123) 456-789-101112
+
         int[] arr = {3, 5, 9, 8, 8, 4, 4, 4, 6, 8, 6, 4};
+
         StringBuilder string = new StringBuilder();
 
         for (int i : arr) {
