@@ -1,15 +1,17 @@
 package com.DPM;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class ValidationData {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int lines = Integer.parseInt(scan.nextLine());
+
         List<Person2> people = new ArrayList<>();
+
         for (int i = 0; i < lines; i++) {
             Person2 man = null;
             String[] line = scan.nextLine().split(" ");
@@ -35,8 +37,6 @@ public class ValidationData {
         }
     }
 }
-
-
 class Person2 {
     private String fname;
     private String sname;
