@@ -24,10 +24,9 @@ public class FurnitureWhileScan {
                 double cena = Double.parseDouble(matcher.group("two"));
                 int broi = Integer.parseInt(matcher.group("three"));
                 sum += cena*broi;
-            }
+               }
                 string = scan.nextLine();
-           }
-
+            }
             System.out.println("Bought furniture:");
 
             for (String s : mebel) {
