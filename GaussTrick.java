@@ -16,11 +16,10 @@ public class GaussTrick {
                 int newNum = liAr.get(i) + liAr.get(liAr.size()-1);
                 liAr.set(i, newNum);
              liAr.remove(liAr.size()-1);
-
             }
             for (Integer num : liAr) {
                 System.out.print(num + " ");
-		}
+		    }
 			System.out.println(liAr.toString().replaceAll("[\\[\\],]", ""));
         }
 }
