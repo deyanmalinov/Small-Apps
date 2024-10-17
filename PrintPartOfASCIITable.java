@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.*;
 
-public class Main {
+public class PrintPartOfASCIITable {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             int begin = Integer.parseInt(scan.nextLine());
