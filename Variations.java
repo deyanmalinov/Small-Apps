@@ -1,12 +1,12 @@
 package com.DPM;
-
 public class Variations {
+
         static int a = 3;
         static int b = 4;
         static int[] mainArr = new int[a];
         static int[] tempArr = new int[]{1, 2, 3, 4};
-        public static void main(String[] args) {
 
+        public static void main(String[] args) {
             Gen(0);
             Swap(a, b);
         }
