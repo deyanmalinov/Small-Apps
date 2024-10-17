@@ -1,11 +1,13 @@
 package com.DPM;
 public class VariationsTest {
-
     public static void main(String[] args) {
+
         int[] arr = new int[3];
+
         fillArray(arr, 0);
     }
      private static void fillArray(int[] arr, int index) {
+
          if (index >= arr.length) {
              printArr(arr);
              return;
