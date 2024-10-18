@@ -1,12 +1,12 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class Problem1Person {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         int age = Integer.parseInt(scan.nextLine());
         try {
-            Child child = new Child(name, age);
+            Children child = new Children(name, age);
             System.out.println(child.toString());
         }catch (IllegalArgumentException msg ){
             System.out.println(msg.getMessage());
@@ -14,10 +14,10 @@ public class Main {
     }
 }
 
-public class Person {
+class Personi {
     private int age;
     private String name;
-    public Person(String name, int age){
+    public Personi(String name, int age){
         this.setName(name);
         this.setAge(age);
     }
@@ -45,8 +45,8 @@ public class Person {
     }
 }
 
-public class Child extends Person{
-    public Child (String name, int age){
+class Children extends Personi {
+    public Children(String name, int age){
         super(name, age);
     }
     public void setAge(int age){
