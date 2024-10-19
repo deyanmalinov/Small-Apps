@@ -13,7 +13,7 @@ public class FactorialDivision {
 
             System.out.printf("%.2f", devisRes);
         }
-    public static double factor (double num){
+public static double factor (double num){
             double fac = 1;
         for (int i = 2; i <= num; i++) {
             fac *= i;
