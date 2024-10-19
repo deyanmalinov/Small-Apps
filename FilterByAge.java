@@ -30,7 +30,7 @@ public class FilterByAge {
                 createPrinter(format);
         printFilteredStudent(people, tester, printer);
     }
-    static Consumer<Map.Entry<String, Integer>> createPrinter(String format) {
+static Consumer<Map.Entry<String, Integer>> createPrinter(String format) {
         Consumer<Map.Entry<String, Integer>> printer = null;
         switch (format) {
             case "name age":
@@ -44,7 +44,7 @@ public class FilterByAge {
         }
         return printer;
     }
-    static Predicate<Integer> createTester(String condition, Integer age) {
+static Predicate<Integer> createTester(String condition, Integer age) {
         Predicate<Integer> tester = null;
         switch (condition) {
             case "younger":
@@ -57,7 +57,7 @@ public class FilterByAge {
         }
         return tester;
     }
-    static void printFilteredStudent(
+static void printFilteredStudent(
             LinkedHashMap<String, Integer> people,
             Predicate<Integer> tester,
             Consumer<Map.Entry<String, Integer>> printer) {
