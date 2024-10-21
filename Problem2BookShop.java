@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class Problem2BookShop {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         try {
@@ -17,7 +17,7 @@ public class Main {
     }
 }
 
-public class Book {
+class Book {
     private String author;
     private String title;
     private double price;
@@ -69,7 +69,7 @@ public class Book {
     }
 }
 
-public class GoldenEditionBook extends Book{
+class GoldenEditionBook extends Book{
     public GoldenEditionBook(String author, String title, double price){
         super(author, title, price);
     }
