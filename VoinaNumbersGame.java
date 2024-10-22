@@ -1,12 +1,12 @@
 package com.DPM;
-
 import java.util.*;
-
 public class VoinaNumbersGame {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+
         Set<Integer> firstPlayer = getCollect(scan.nextLine());
+
         Set<Integer> secondPlayer = getCollect(scan.nextLine());
 
         for (int i = 0; i < 50; i++) {
@@ -16,8 +16,11 @@ public class VoinaNumbersGame {
             Iterator<Integer> sPlaIter = secondPlayer.iterator();
 
             int firPVal = fPlaIter.next();
+
             firstPlayer.remove(firPVal);
+
             int secPVal = sPlaIter.next();
+
             secondPlayer.remove(secPVal);
 
             if (firPVal > secPVal){
@@ -39,7 +42,6 @@ public class VoinaNumbersGame {
             System.out.println("Draw");
         }
     }
-
     static LinkedHashSet<Integer> getCollect(String line) {
         LinkedHashSet<Integer> res = new LinkedHashSet<>();
         Arrays.stream(line.split(" "))
