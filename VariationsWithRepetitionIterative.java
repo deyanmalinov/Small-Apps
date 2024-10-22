@@ -1,10 +1,11 @@
 package com.DPM;
-
 public class VariationsWithRepetitionIterative {
-
     public static void main(String[] args) {
+
         int arrSize = 3;
+
         int num = 5;
+
         int[] arr = new int[arrSize];
 
         while (true){
