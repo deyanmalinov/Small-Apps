@@ -1,24 +1,31 @@
 package com.DPM;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-
 public class FilterByAge {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
+
         int num = Integer.parseInt(scan.nextLine());
+
         LinkedHashMap<String, Integer> people=new LinkedHashMap<>();
+
         for (int i = 0; i < num; i++) {
             String[] input =scan.nextLine().split(", ");
             people.put(input[0], Integer.parseInt(input[1]));
         }
-       String condition = scan.nextLine();
+
+        String condition = scan.nextLine();
+
         int age = Integer.parseInt(scan.nextLine());
+
         String format = scan.nextLine();
+
         Predicate<Integer> tester = createTester(condition, age);
+
         Consumer<Map.Entry<String, Integer>> printer =
                 createPrinter(format);
         printFilteredStudent(people, tester, printer);
