@@ -13,5 +13,5 @@ public class PrintPartOfASCIITable {
                 char znak = (char)i;
                 System.out.print(znak+ " ");
             }
-        }
+      }
 }
