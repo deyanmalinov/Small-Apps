@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.ArrayDeque;
 import java.util.Scanner;
-public class PrinterQueue2 {
+public class PrinterQueue_2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
