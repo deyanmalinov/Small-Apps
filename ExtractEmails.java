@@ -18,5 +18,5 @@ public class ExtractEmails {
             while (matcher.find()) {
                 System.out.println(matcher.group(0));
             }
-     }
+        }
 }
