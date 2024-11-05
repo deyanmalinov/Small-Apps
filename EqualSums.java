@@ -12,7 +12,6 @@ public class EqualSums {
             for (int i = 0; i < nums.length; i++) {
                 nums[i] = Integer.parseInt(line[i]);
             }
-
             boolean ind = false;
 
             for (int i = 0; i < nums.length; i++) {
@@ -29,9 +28,8 @@ public class EqualSums {
                     break;
                 }
             }
-
             if (ind != true){
                 System.out.println("No");
-            }
+        }
     }
 }
