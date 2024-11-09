@@ -1,7 +1,5 @@
 package com.DPM;
-
 import java.util.*;
-
 public class WordSynonyms {
     public static void main(String[] args) {
 
