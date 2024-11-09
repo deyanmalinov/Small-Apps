@@ -25,5 +25,5 @@ public class OddOccurrencesReplaceAll {
             }
            System.out.println(String.join(", ",res));
             System.out.println(res.toString().replaceAll("\\[|\\]", ""));
-        }
+      }
 }
