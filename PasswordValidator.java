@@ -11,13 +11,13 @@ public class PasswordValidator {
                 System.out.println("Password is valid");
             }
         }
-        public static boolean validPass (String s){
+    public static boolean validPass (String s){
             boolean correctCharCount = validCount(s);
             boolean onlyLandD = coutValid(s);
             boolean haveThoDig = twoDigVal(s);
             return correctCharCount && onlyLandD && haveThoDig;
         }
-        private static boolean twoDigVal(String s) {
+    private static boolean twoDigVal(String s) {
             int digCout = 0;
         for (int i = 0; i < s.length(); i++) {
             char sim = s.charAt(i);
@@ -27,7 +27,6 @@ public class PasswordValidator {
                     return true;
                 }
             }
-
         }
         System.out.println("Password must have at least 2 digits");
         return false;
