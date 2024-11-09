@@ -12,6 +12,7 @@ public class PartyProfit {
             int coin = days*50;
 
             for (int i = 1; i <= days; i++) {
+
                 coin -= party*2;
 
                 if (i % 10 == 0){
