@@ -1,8 +1,9 @@
 package DPM;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-public class Main {
+public class SalaryIncrease {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int lines = Integer.parseInt(scan.nextLine());
@@ -26,10 +27,8 @@ public class Main {
         }
     }
 }
-------------------------------------------------------------------------
-package DPM;
-import java.text.DecimalFormat;
-public class Person {
+//------------------------------------------------------------------------
+class Person {
     private String fname;
     private String sname;
     private int age;
