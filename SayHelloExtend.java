@@ -1,25 +1,25 @@
 package com.DPM;
 import java.util.ArrayList;
 import java.util.List;
-public class Main {
+public class SayHelloExtend {
     public static void main(String[] args) {
-        List<Person> people = new ArrayList<>();
+        List<Persona> people = new ArrayList<>();
         people.add(new Bulgarian("Pesho"));
         people.add(new European("Pesho"));
         people.add(new Chinese("Pesho"));
-        for (Person person : people) {
+        for (Persona person : people) {
             print(person);
         }
     }
-    private static void print(Person person){
+    private static void print(Persona person){
         System.out.println(person.sayHello());
     }
 }
-public interface Person {
+interface Persona {
     String getName();
     String sayHello();
 }
-public abstract class BasePerson implements Person{
+abstract class BasePerson implements Persona{
     private String name;
     private String hello;
     public void setName(String name){
@@ -34,7 +34,7 @@ public abstract class BasePerson implements Person{
         return hello;
     }
 }
-public class Bulgarian extends BasePerson {
+class Bulgarian extends BasePerson {
     private String name;
     public Bulgarian(String name){
         this.name=name;
@@ -52,7 +52,7 @@ public class Bulgarian extends BasePerson {
         return "Здравей";
     }
 }
-public class European extends BasePerson{
+class European extends BasePerson{
     private String name;
     public European(String name){
         this.name=name;
@@ -70,7 +70,7 @@ public class European extends BasePerson{
         return "Hello";
     }
 }
-public class Chinese extends BasePerson{
+class Chinese extends BasePerson{
     private String name;
     public Chinese(String name){
         this.name=name;
