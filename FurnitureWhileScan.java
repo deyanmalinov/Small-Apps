@@ -1,9 +1,7 @@
 package com.DPM;
-
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 public class FurnitureWhileScan {
         public static void main(String[] args) {
 
@@ -26,7 +24,6 @@ public class FurnitureWhileScan {
                 double cena = Double.parseDouble(matcher.group("two"));
                 int broi = Integer.parseInt(matcher.group("three"));
                 sum += cena*broi;
-
             }
                 string = scan.nextLine();
            }
@@ -36,8 +33,6 @@ public class FurnitureWhileScan {
             for (String s : mebel) {
                 System.out.println(s);
             }
-
             System.out.printf("Total money spend: %.2f", sum);
-
         }
 }
