@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.Scanner;
-public class Problem2BookShop {
+public class Problem_BookShop {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
