@@ -1,20 +1,20 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class ShapesDrawing {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Drawable circle = new Circle(4);
-        Drawable rectangle = new Rectangle(9,9);
+        Drawables circle = new Circles(4);
+        Drawables rectangle = new Rectangles(9,9);
         circle.draw();
         rectangle.draw();
     }
 }
-public interface Drawable {
+interface Drawables {
     void draw();
 }
-public class Circle implements Drawable{
+class Circles implements Drawables{
     private Integer radius;
-    public Circle(Integer radius){
+    public Circles(Integer radius){
         this.radius = radius;
     }
     public Integer getRadius() {
@@ -34,10 +34,10 @@ public class Circle implements Drawable{
             System.out.println(); }
     }
 }
-public class Rectangle implements Drawable{
+class Rectangles implements Drawables{
     private Integer width;
     private Integer height;
-    public Rectangle(Integer width, Integer height){
+    public Rectangles(Integer width, Integer height){
         this.width = width;
         this.height= height;
     }
