@@ -1,10 +1,8 @@
 package com.DPM;
 import java.util.ArrayDeque;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
-public class Main {
+public class SimpleCalculator2 {
     public static void main(String[] args) {
         //2 + 5 + 10 - 2 - 1
         Scanner scan = new Scanner(System.in);
