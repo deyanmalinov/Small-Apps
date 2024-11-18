@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.*;
-public class SimpleCalculator1 {
+public class SimpleCalculator_1 {
     public static void main(String[] args){
 
         Scanner scan = new Scanner(System.in);
