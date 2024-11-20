@@ -27,15 +27,12 @@ public class Telephony {
         }
     }
 }
-
 interface Browsable {
     String browse(String site);
 }
-
 interface Callable {
     String call(String number);
 }
-
 class Smartphone implements Browsable, Callable{
     public Smartphone(){
     }
