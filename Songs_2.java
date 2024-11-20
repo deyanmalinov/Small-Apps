@@ -1,5 +1,5 @@
 package com.DPM;
-public class Songs2 {
+public class Songs_2 {
 
     private String typeList;
 
