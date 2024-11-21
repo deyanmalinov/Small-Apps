@@ -1,6 +1,6 @@
 package com.DPM;
 
-public class Songs {
+public class Songs2 {
     private String typeList;
     private String name;
     private String time;
