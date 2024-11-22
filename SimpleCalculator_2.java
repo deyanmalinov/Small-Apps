@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.ArrayDeque;
 import java.util.Scanner;
-public class SimpleCalculator2 {
+public class SimpleCalculator_2 {
     public static void main(String[] args) {
 
         //2 + 5 + 10 - 2 - 1
