@@ -2,6 +2,7 @@ package com.DPM;
 
 public class SpecialArrays {
     public static void main(String[] args) {
+
         int[] arrayA = {2, 5, 6, 7};
         int[] arrayB = {2, 4, 6, 8};
 
