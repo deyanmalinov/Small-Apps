@@ -6,9 +6,7 @@ public class Split_by_Space {
         public static void main(String[] args) {
 
             Scanner scan = new Scanner(System.in);
-
             String nums = scan.nextLine();
-
             String [] mas = nums.split(" ");
 
             int [] chisla = new int [mas.length];
