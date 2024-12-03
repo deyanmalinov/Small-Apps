@@ -2,7 +2,7 @@ package com.DPM;
 import java.util.Scanner;
 import java.util.function.Function;
 
-public class Main {
+public class StringArrToIntegerArrWithFunction {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] line = scan.nextLine().split(" ");
