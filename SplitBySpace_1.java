@@ -1,6 +1,6 @@
 package com.DPM;
 import java.util.Scanner;
-public class Split_by_Space {
+public class SplitBySpace_1 {
         public static void main(String[] args) {
 
             Scanner scan = new Scanner(System.in);
