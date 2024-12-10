@@ -16,7 +16,7 @@ public class UpperStrings_SingleLine {
                 .map(name -> name.toUpperCase())
                 .forEach(name -> System.out.print(name + " "));
 
-Arrays.stream(scan.nextLine()
+        Arrays.stream(scan.nextLine()
                 .split(" "))
                 .collect(Collectors.toList()).stream()
                 .map(name -> name.toUpperCase())
