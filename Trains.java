@@ -1,7 +1,7 @@
 package com.DPM;
 import java.util.*;
 import java.util.stream.Collectors;
-public class Train {
+public class Trains {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -22,6 +22,7 @@ public class Train {
 
         if (comand.length == 2){
                 int secCom = Integer.parseInt(comand[1]);
+
                 listArr.add(secCom);
             }else {
                 int onlyNum = Integer.parseInt(comand[0]);
