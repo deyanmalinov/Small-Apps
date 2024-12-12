@@ -2,7 +2,7 @@ package com.DPM;
 
 import java.util.*;
 
-public class Main {
+public class SubString {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String sub = scan.nextLine();
