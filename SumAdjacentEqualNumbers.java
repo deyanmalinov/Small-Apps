@@ -1,7 +1,7 @@
 package com.DPM;
 import java.text.DecimalFormat;
 import java.util.*;
-public class Main {
+public class SumAdjacentEqualNumbers {
     private int nums;
 
     public static void main(String[] args) {
