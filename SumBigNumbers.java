@@ -1,8 +1,8 @@
 package com.DPM;
 import java.math.BigInteger;
 import java.util.*;
-import java.util.stream.Collectors;
-public class Main {
+
+public class SumBigNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         BigInteger fnum = scan.nextBigInteger();
