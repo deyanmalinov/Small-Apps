@@ -15,7 +15,6 @@ public class WordSynonyms {
             newMap.putIfAbsent(str1, new ArrayList<>());
             newMap.get(str1).add(str2);
         }
-
         for (Map.Entry<String, List<String>> entry : newMap.entrySet()) {
             String value1 = String.join(", ", entry.getValue());
             System.out.printf("%s - %s\n", entry.getKey(), value1);
