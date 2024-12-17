@@ -1,6 +1,6 @@
 package com.DPM;
 import java.io.*;
-public class Main {
+public class SumBytesWriteToFile {
     public static void main(String[] args) throws IOException {
         String path = "D:\\Coding\\BG_Softuni\\Java Advanced - January 2019" +
                 "\\04.1. Java-Advanced-Files-and-Directories-Exercises\\" +
