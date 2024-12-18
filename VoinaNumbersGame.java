@@ -10,9 +10,11 @@ public class VoinaNumbersGame {
         Set<Integer> secondPlayer = getCollect(scan.nextLine());
 
         for (int i = 0; i < 50; i++) {
+
             if (firstPlayer.isEmpty() || secondPlayer.isEmpty()) break;
 
             Iterator<Integer> fPlaIter = firstPlayer.iterator();
+
             Iterator<Integer> sPlaIter = secondPlayer.iterator();
 
             int firPVal = fPlaIter.next();
@@ -43,6 +45,7 @@ public class VoinaNumbersGame {
         }
     }
     static LinkedHashSet<Integer> getCollect(String line) {
+
         LinkedHashSet<Integer> res = new LinkedHashSet<>();
         Arrays.stream(line.split(" "))
                 .mapToInt(Integer::parseInt)
