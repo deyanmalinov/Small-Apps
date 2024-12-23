@@ -1,7 +1,8 @@
 package com.DPM;
 import java.util.Scanner;
-public class Main {
+public class SumMatrixElements {
     public static void main(String[] args){
+
         Scanner scan = new Scanner(System.in);
         String[] fLine = scan.nextLine().split(", ");
         int row = Integer.parseInt(fLine[0]);
