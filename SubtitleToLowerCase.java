@@ -17,10 +17,11 @@ public class SubtitleToLowerCase {
         System.out.println("Type the path of the NEW file:");
         String pathNew = scanner1.nextLine();
 
+        //TODO 3. create output file
         Scanner scanner = new Scanner(new File(path));
         BufferedWriter writer = new BufferedWriter(new FileWriter(pathNew));
 
-        //TODO 3. file go through upper case to lower case
+        //TODO 4. file go through upper case to lower case
         while (scanner.hasNextLine()){
             String line = scanner.nextLine();
             writer.write(line.toLowerCase());
