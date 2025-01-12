@@ -13,28 +13,30 @@ public class Constructors {
                 .boxed()
                 .map(n -> scan.nextLine().split(" "))
                 .map(data -> {
-                    Cars2 newCar;
+                    Cars21 newCar;
                     if (data.length == 3){
-                        newCar = new Cars2(data[0],data[1],Integer.parseInt(data[2]));
+                        newCar = new Cars21(data[0],data[1],Integer.parseInt(data[2]));
                     }else {
-                        newCar = new Cars2(data[0]);
+                        newCar = new Cars21(data[0]);
                     }
                     return newCar;
                 })
                 .forEach(car -> System.out.println(car.getCarInfo()));
     }
 }
-class Cars {
+class Cars21 {
+
     private String make;
     public String getMake() {
         return make;
     }
-    public Cars(String make){
+
+    public Cars21(String make){
         this.make=make;
         this.model="unknown";
         this.horsePower= -1;
     }
-    public Cars (String make, String model, int horsePower){
+    public Cars21 (String make, String model, int horsePower){
         this(make);
         this.model=model;
         this.horsePower=horsePower;
